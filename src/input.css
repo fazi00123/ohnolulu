@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* @font-face {
+  font-family: Outfit;
+  src: url(/build/assets/fonts/Outfit-Thin.ttf);
+}
+
+
+
+
+h2 , h1 , p {
+  font-family: Outfit;
+}
+  */
+body{
+  font-family: "Outfit", sans-serif;
+
+}
+
+@layer utilities {
+  @keyframes dotFloat {
+    0%, 100% {
+      transform: translate(-50%, -5px); /* thoda neeche (start near line) */
+    }
+    50% {
+      transform: translate(-50%, -55px); /* upar move kare */
+    }
+  }
+
+  .animate-dotFloat {
+    animation: dotFloat 2.6s ease-in-out infinite;
+  }
+}
+
+
+.hover-img {
+  transition: all 0.3s ease-out;
+}
+.hover-img:hover {
+  filter: brightness(0.7);
+  /* transform: scale(1.05); */
+}

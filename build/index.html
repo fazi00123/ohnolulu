@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- navbar  -->
+  <nav
+    class="bg-[#430721] 2xl:py-5 xl:py-5 md:py-3 py-4 2xl:px-24 lg:px-10 md:px-9 px-5 fixed top-0 left-0 w-full z-50 shadow-md">
+    <!-- 👈 fixed navbar -->
+    <div class="flex justify-center items-center">
+      <!-- Logo Center -->
+      <img src="./assets/img/Logo_Ohnolulu-copie5-Copie.png" class="2xl:w-32 xl:w-28 md:w-28 w-24" alt="Logo">
+
+      <!-- Toggle Button Right -->
+      <button id="menu-toggle"
+        class="absolute top-1/2 -translate-y-1/2 xl:right-20 lg:right-14 md:right-9 right-5 2xl:right-80">
+        <div class="2xl:space-y-1.5 lg:space-y-1.5 space-y-1">
+          <span class="block 2xl:w-7 lg:w-6 w-6 2xl:h-[2px] lg:h-[2px] h-[2px] bg-white"></span>
+          <span class="block 2xl:w-7 lg:w-6 w-6 2xl:h-[2px] lg:h-[2px] h-[2px] bg-white"></span>
+          <span class="block 2xl:w-7 lg:w-6 w-6 2xl:h-[2px] lg:h-[2px] h-[2px] bg-white"></span>
+        </div>
+      </button>
+    </div>
+
+    <!-- Fullscreen Overlay Menu -->
+    <div id="menu-overlay"
+      class="fixed inset-0 bg-[#430721] hidden flex-col items-center text-white z-[9999] overflow-y-auto md:py-10">
+
+      <!-- Close Button -->
+      <button id="menu-close"
+        class="fixed 2xl:top-7 xl:top-10 lg:top-6 md:top-7 top-7 xl:right-20 lg:right-16 md:right-9 right-6 2xl:right-80 text-4xl font-bold z-[10000] text-[#FFFFFF]">&times;</button>
+
+      <!-- Logo in Menu (Top) -->
+      <img src="./assets/img/Logo_Ohnolulu-copie5-Copie.png"
+        class="2xl:max-w-48 md:max-w-48 max-w-36 2xl:mb-10 md:mb-20 mb-10 lg:pt-0 md:pt-0 pt-16" alt="Logo">
+
+      <!-- Navigation Links -->
+      <ul class="2xl:space-y-5 space-y-6 text-base md:text-2xl mb-10 text-center font-extralight text-[#FFFFFF]">
+        <li class="2xl:pt-10 md:pt-3 pt-4 text-base"><a href="./index.html">ACCUEIL</a></li>
+        <li class=" text-base"><a href="./NOTRE CARTE.html">NOTRE CARTE</a></li>
+        <li class=" text-base"><a href="./contact.html">CONTACT / RESERVATIONS</a></li>
+      </ul>
+
+      <!-- Images -->
+      <div class="flex space-x-3 2xl:pt-11 md:pt-7 pt-11 2xl:pb-5 pb-8">
+        <a href="#"><img src="./assets/img/en.png" alt="EN" class="w-5 h-5 object-contain"></a>
+        <a href="#"><img src="./assets/img/fr.png" alt="FR" class="w-5 h-5 object-contain"></a>
+      </div>
+
+      <!-- Text -->
+      <p
+        class="text-center 2xl:text-xl md:text-xl text-sm font-extralight 2xl:leading-4 md:leading-6 leading-4 pb-5 text-[#FFFFFF]">
+        Restez connecté
+      </p>
+
+      <!-- Buttons / Social Icons -->
+      <div class="flex 2xl:gap-5 gap-4 2xl:mb-12 md:mb-12 mb-9">
+        <a href="https://instagram.com" target="_blank"
+          class="flex items-center justify-center 2xl:w-9 w-8 2xl:h-9 h-8 bg-white rounded-full hover:shadow-lg transition">
+          <i class="fab fa-instagram text-[#404D5C] 2xl:text-base text-sm"></i>
+        </a>
+
+        <a href="https://facebook.com" target="_blank"
+          class="flex items-center justify-center 2xl:w-9 w-8 2xl:h-9 h-8 bg-white rounded-full hover:shadow-lg transition">
+          <i class="fab fa-facebook-f text-[#404D5C] 2xl:text-base text-sm"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar  -->
+
+
+  <!-- hero img   -->
+  <section style="background-image: url(./assets/img/Pic-1.jpg);"
+    class="relative bg-cover bg-no-repeat xl:h-screen lg:h-[906px] md:h-[758px] h-[560px] bg-center">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#430721] via-[#430721]/80 to-[#430721]/40"></div>
+    <div class="relative text-center ">
+      <div class="2xl:pt-52 xl:pt-52 lg:pt-[358px] md:pt-[268px] pt-[187px] 2xl:px-12 px-5">
+        <h1
+          class="2xl:text-[56px] xl:text-[56px] lg:text-5xl md:text-5xl text-3xl text-[#FFFFFF] font-thin 2xl:leading-[67px] xl:leading-[67px] lg:leading-[57px] md:leading-[56px] leading-9">
+          Ne vous êtes-vous jamais senti <br class="2xl:block xl:block lg:hidden hidden">
+          <span class="font-normal">transporté</span> <br class="2xl:hidden xl:hidden lg:block hidden"> en participant
+          à
+          une <br class="2xl:block xl:block lg:hidden block">
+          expérience hors du <br class="2xl:hidden xl:hidden lg:block hidden"> <span class="font-normal">commun?</span>
+        </h1>
+      </div>
+      <div class="2xl:pt-20  md:pt-[70px] pt-10">
+        <p class="2xl:text-xs lg:text-xs text-[10px] text-[#FFFFFF] leading-3 font-extralight tracking-[2px] uppercase">
+          DEFILER VERS
+          LE BAS</p>
+      </div>
+      <div class="flex justify-center">
+        <div class="relative z-40 w-full max-w-[600px]">
+          <!-- Horizontal line -->
+          <div class="absolute 2xl:left-[298px] md:left-[299px] left-[186px] top-6">
+            <img src="./assets/img/horizl.png" alt="horizontal line" class="h-14">
+          </div>
+
+          <!-- White dot (absolute + smooth up/down motion above the line) -->
+          <div class="absolute top-20 left-1/2 -translate-x-1/2 animate-dotFloat">
+            <img src="./assets/img/whitedot.png" alt="white dot" class="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section  -->
+  </section>
+  <!-- end hero img  -->
+
+  <!-- Notre histoire  -->
+  <section>
+    <div
+      class="lg:text-center md:text-center text-start 2xl:px-24 xl:px-16 lg:px-12 md:px-9 px-5 2xl:pt-28 md:pt-[76px] pt-9">
+      <div>
+        <h1
+          class="2xl:text-[44px] md:text-[44px] text-3xl 2xl:leading-[52px] md:leading-[52px] leading-9 font-extralight text-[#111111]">
+          Notre histoire</h1>
+      </div>
+      <div class="2xl:pt-5 pt-5">
+        <p
+          class="2xl:text-base md:text-base text-sm font-extralight 2xl:leading-7 md:leading-7 leading-6 text-[#111111]">
+          Notre
+          histoire, c’est l’envie de vous faire évader du quotidien
+          en vous procurant du <br class="2xl:block xl:block hidden">
+          plaisir grâce aux saveurs de nos succulents cocktails tout en profitant d’une expérience <br
+            class="2xl:block xl:block hidden">
+          unique chaque jour de la semaine.</p>
+      </div>
+      <div class="2xl:pt-5 pt-5">
+        <p
+          class="2xl:text-base md:text-base text-sm font-extralight 2xl:leading-7 md:leading-7 leading-6 text-[#111111]">
+          Nous
+          bousculons les traditions des bars standards. Chez nous,
+          vous découvrirez des <br class="2xl:block xl:block hidden">
+          boissons et des mets artisanaux qui raviront vos yeux et votre palais.</p>
+      </div>
+      <div class="2xl:pt-5 pt-5">
+        <h1 class="2xl:text-2xl md:text-2xl text-xl 2xl:leading-7 md:leading-7 leading-6 font-light text-[#111111]">
+          Comment ?</h1>
+      </div>
+      <div class="2xl:pt-5 pt-5">
+        <p
+          class="2xl:text-base md:text-base text-sm font-extralight 2xl:leading-7 md:leading-7 leading-6 text-[#111111]">
+          Oh no Lulu!
+          Notre établissement innovant, international et de
+          haut standing vous offre <br class="2xl:block xl:block hidden">
+          la possibilité de profiter de conditions idéales pour une expérience multisensorielle.</p>
+      </div>
+    </div>
+  </section>
+  <!-- end section -->
+
+  <!-- 3 img section  -->
+  <section>
+    <div style="background-image: url(./assets/img/bgimg.jpeg);" class="bg-cover bg-no-repeat">
+      <div class="2xl:px-24 xl:px-16 lg:px-12 md:px-9 px-5  2xl:pt-28 xl:pt-20 lg:pt-24 md:pt-[76px] pt-9">
+
+        <div class="2xl:max-w-[1300px] mr-auto ml-auto ">
+          <div class="lg:flex md:grid grid-cols-3 justify-between xl:gap-11 lg:gap-6 md:gap-6 gap-5 w-full">
+            <div class="lg:block md:block hidden">
+              <img src="./assets/img/Image 1.png" class="2xl:w-[500px] xl:w-[500px] lg:w-[350px] md:w-[350px]" alt="">
+            </div>
+            <div>
+              <img src="./assets/img/Image 2.png" class="2xl:w-[500px] xl:w-[500px] lg:w-[350px] md:w-[350px]" alt="">
+            </div>
+            <div class="lg:block md:block hidden">
+              <img src="./assets/img/Image 3.png" class="2xl:w-[500px] xl:w-[500px] lg:w-[350px] md:w-[350px]" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="">
+      <div
+        class="bg-[#430721] 2xl:pt-24 xl:pt-20 lg:pt-[102px] md:pt-[76px] pt-9 2xl:pb-28 xl:pb-20 lg:pb-0 md:pb-[76px] pb-9 w-full 2xl:px-24 lg:px-10 md:px-9 px-5">
+        <div>
+          <p
+            class=" 2xl:text-base md:text-base text-sm 2xl:leading-7 md:leading-7 leading-6 font-thin lg:text-center md:text-center text-start text-[#FFFFFF]">
+            Embarquez pour l'une de nos trois salles distinctes qui vous plongeront dans des expériences <br
+              class="2xl:block xl:block lg:hidden md:block hidden">
+            uniques : une ambiance conviviale et familiale avec nos barmans dans la première salle, une <br
+              class="2xl:block xl:block lg:hidden md:block hidden">
+            atmosphère plus intime pour vous retrouver avec vos proches dans la deuxième, ou une évasion <br
+              class="2xl:block xl:block lg:hidden md:block hidden">
+            totale sur la piste de danse du sous-sol.
+          </p>
+        </div>
+
+        <div>
+          <p
+            class="2xl:pt-5 pt-5 2xl:text-base md:text-base text-sm 2xl:leading-7 md:leading-7 leading-6 font-thin lg:text-center md:text-center text-start text-[#FFFFFF]">
+            Notre concept
+            est
+            articulé autour d’un univers dont
+            les
+            fondamentaux sont :</p>
+        </div>
+        <div class="2xl:pt-12 md:pt-12 pt-7">
+          <div class="2xl:max-w-[930px] xl:max-w-[891px] lg:max-w-[750px] mr-auto ml-auto">
+            <div class="lg:flex w-full md:grid md:grid-cols-4 grid grid-cols-2 justify-between">
+              <div>
+                <div class="flex justify-center">
+                  <img src="./assets/img/s.png" class="2xl:w-auto md:w-12 w-10 2xl:h-auto md:h-12 h-10" alt="">
+                </div>
+                <div class="2xl:pt-4 md:pt-5 pt-3">
+                  <p class="text-[#FFFFFF] 2xl:text-xl md:text-base text-sm font-thin lg:text-start text-center">
+                    Éthique</p>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-center">
+                  <img src="./assets/img/r.png" class="2xl:w-auto md:w-12 w-10 2xl:h-auto md:h-12 h-10" alt="">
+                </div>
+                <div class="2xl:pt-4 md:pt-5 pt-3">
+                  <p class="text-[#FFFFFF] 2xl:text-xl md:text-base text-sm  font-thin lg:text-start text-center">
+                    Humoristique</p>
+                </div>
+              </div>
+              <div class="lg:pt-0 md:pt-0 pt-6">
+                <div class="flex justify-center">
+                  <img src="./assets/img/a.png" class="2xl:w-auto md:w-12 w-10 2xl:h-auto md:h-12 h-10" alt="">
+                </div>
+                <div class="2xl:pt-4 md:pt-5 pt-3">
+                  <p class="text-[#FFFFFF] 2xl:text-xl md:text-base text-sm font-thin lg:text-start text-center">
+                    Inclusif</p>
+                </div>
+              </div>
+              <div class="lg:pt-0 md:pt-0 pt-6">
+                <div class="flex justify-center">
+                  <img src="./assets/img/l.png" class="2xl:w-auto md:w-12 w-10 2xl:h-auto md:h-12 h-10" alt="">
+                </div>
+                <div class="2xl:pt-4 md:pt-5 pt-3">
+                  <p class="text-[#FFFFFF] 2xl:text-xl md:text-base text-sm  font-thin lg:text-start text-center">
+                    Artistique</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- Découvrez l'art du cocktail  -->
+  <section>
+    <div
+      class="2xl:px-24 xl:px-16 lg:px-12 md:px-9 px-5 2xl:pt-28 xl:pt-20 md:pt-[76px] pt-9 2xl:pb-28 xl:pb-20 md:pb-[76px] pb-9">
+      <div class="2xl:max-w-[1300px] mr-auto ml-auto  ">
+        <div class="flex xl:flex-row  flex-col-reverse justify-center 2xl:gap-24 md:gap-12 gap-5 items-center">
+          <div class="2xl:w-[44%] lg:w-full md:w-full">
+            <div>
+              <h1
+                class="2xl:text-[44px] md:text-[44px] text-3xl 2xl:leading-[52px] md:leading-[52px]  leading-9 font-extralight text-[#111111]">
+                Découvrez l'art du <br class="lg:hidden md:hidden block"> cocktail</h1>
+            </div>
+            <div class="2xl:pt-5 md:pt-5 pt-3">
+              <p
+                class="2xl:text-base md:text-base text-sm 2xl:leading-7 md:leading-7 leading-6 font-extralight text-[#111111]">
+                Nous
+                nous adaptons constamment aux dernières tendances afin
+                de devenir un <br class="2xl:block xl:block lg:hidden hidden">
+                lieu incontestable <br class="2xl:hidden lg:hidden md:block hidden"> de partage, où les expériences <br
+                  class="2xl:hidden xl:hidden lg:block hidden">
+                varient avec les heures de la <br class="2xl:block xl:block lg:hidden hidden">
+                journée et tout au long de l’année.</p>
+            </div>
+            <div class="2xl:pt-5 md:pt-5 pt-3">
+              <p
+                class="2xl:text-base md:text-base text-sm 2xl:leading-7 md:leading-7 leading-6 font-extralight text-[#111111]">
+                Notre
+                établissement possède un salon à cocktails haut de
+                gamme, un restaurant <br class="2xl:block xl:block lg:hidden hidden">
+                lumineux avec un <br class="2xl:hidden xl:hidden lg:hidden md:block hidden"> bar sophistiqué et un
+                espace <br class="xl:hidden lg:block hidden"> dédié
+                pour des évènements <br class="xl:block lg:hidden hidden">
+                ponctuels au sous-sol.</p>
+            </div>
+            <div
+              class="border border-black py-1 hover:bg-[#430721] hover:text-[#ffffff] 2xl:px-4 px-4 inline-block 2xl:mt-5 md:mt-5 mt-3">
+              <a href="./NOTRE CARTE.html"><button class="text-xs  font-light uppercase tracking-wider">Voir notre
+                  carte</button></a>
+
+            </div>
+          </div>
+          <div class="2xl:w-[44%] xl:w-11/12 lg:w-full md:w-full">
+            <img src="./assets/img/rightimg.png" class="2xl:w-full xl:w-[1175px] lg:w-[946px] md:w-[740px] w-full"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section  -->
+
+  <!-- section footer  -->
+  <footer>
+    <div
+      class="bg-[#111111] text-white overflow-hidden 2xl:px-24 xl:px-16 lg:px-12 md:px-9 px-5 2xl:mb-8 mb-10 2xl:pt-[76px] xl:pt-14 lg:pt-24 md:pt-[76px] pt-11 2xl:pb-9 xl:pb-7 pb-7 lg:pb-16 md:pb-9">
+      <div class="max-w-[1300px] mx-auto flex flex-col items-center justify-center ">
+
+        <!-- Logo -->
+        <img src="./assets/img/Logo_Ohnolulu-copie5-Copie.png" class="2xl:max-w-48 md:max-w-48 max-w-36" alt="Logo">
+
+        <div class="flex space-x-3 2xl:pt-10 md:pt-14 pt-[54px] 2xl:pb-5 pb-8">
+          <a href="#"><img src="./assets/img/en.png" alt="EN" class="w-5 h-5 object-contain"></a>
+          <a href="#"><img src="./assets/img/fr.png" alt="FR" class="w-5 h-5 object-contain"></a>
+        </div>
+        <!-- Navigation Links -->
+        <ul class="flex 2xl:gap-5 md:gap-5 gap-2 items-center  font-extralight 2xl:mb-10 md:mb-14 mb-10 text-center">
+          <li class="text-[#FFFFFF] 2xl:text-xs text-xs tracking-[2px]"><a href="./index.html">ACCUEIL</a></li>
+          <div class="2xl:w-1 w-[2px] 2xl:h-3 h-2 bg-[#7A7A7A]">
+          </div>
+          <li class="text-[#FFFFFF] 2xl:text-xs text-xs tracking-[2px]"><a href="./NOTRE CARTE.html">NOTRE CARTE</a>
+          </li>
+          <div class="2xl:w-1 w-[2px] 2xl:h-3 h-2 bg-[#7A7A7A]">
+          </div>
+          <li class="text-[#FFFFFF] 2xl:text-xs text-xs tracking-[2px]"><a href="./contact.html">CONTACT /
+              RESERVATIONS</a></li>
+        </ul>
+        <!-- Social Buttons -->
+        <div class="flex 2xl:gap-4 gap-4 2xl:mb-10 md:mb-12 mb-5">
+          <a href="https://instagram.com" target="_blank"
+            class="flex items-center justify-center 2xl:w-8 w-8 2xl:h-8 h-8 bg-white rounded-full hover:shadow-lg transition">
+            <i class="fab fa-instagram text-[#404D5C] 2xl:text-base text-sm"></i>
+          </a>
+
+          <a href="https://facebook.com" target="_blank"
+            class="flex items-center justify-center 2xl:w-8 w-8 2xl:h-8 h-8 bg-white rounded-full hover:shadow-lg transition">
+            <i class="fab fa-facebook-f text-[#404D5C] 2xl:text-base text-sm"></i>
+          </a>
+        </div>
+        <div class="py-2">
+          <img src="./assets/img/Horizontal Divider.png" alt="">
+        </div>
+        <div class="2xl:pt-8 md:pt-7 pt-8 ">
+          <p
+            class="2xl:text-xs xl:text-xs md:text-xs text-[10px] 2xl:leading-6 md:leading-6 leading-4 font-extralight text-[#CCCCCC]">
+            2023 &copy Oh No Lulu! Tous les
+            droits sont réservés.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- end section footer  -->
+
+  <!-- back button  -->
+  <button id="backToTop" class="hidden fixed 2xl:bottom-6 xl:bottom-6 md:bottom-[14px] bottom-1 2xl:right-6 md:right-6 right-3 bg-[#00000066] text-white 2xl:px-3 md:px-3 px-2 2xl:py-2 md:py-2 py-[3px] rounded-sm shadow-lg 
+         hover:bg-black/80 transition duration-300 z-[999]">
+    <i class="fa-solid fa-chevron-up 2xl:text-xs md:text-xs text-[8px] font-extrabold"></i>
+  </button>
+
+  <footer-bar>
+    <div id="footerBar"
+      class="fixed bottom-0 left-0 w-full bg-[#430721] flex justify-around items-center
+  text-white z-50 shadow-[0_-2px_10px_rgba(0,0,0,0.3)] transition-all duration-500 grid grid-cols-4 lg:py-0 md:py-0 py-2 divide-x-[1px] divide-[#FFFFFF59]">
+
+      <div
+        class="group relative flex items-center justify-center gap-4 2xl:py-2 md:py-3 py-2 px-6 cursor-pointer transition-all duration-300 hover:bg-black"
+        onclick="togglePanel('hours')">
+
+        <i class="fa-regular fa-clock 2xl:text-sm xl:text-sm lg:text-xl md:text-lg text-base"></i>
+        <span class="text-sm leading-5 font-extralight text-[#FFFFFF] text-center xl:block hidden">Horaires
+          d’ouverture</span>
+      </div>
+
+      <div
+        class="group relative flex items-center justify-center gap-4 2xl:py-2 md:py-3 py-2 px-6 cursor-pointer transition-all duration-300 hover:bg-black"
+        onclick="togglePanel('reservation')">
+        <i class="fa-regular fa-calendar-days 2xl:text-sm xl:text-sm lg:text-xl md:text-lg text-base"></i>
+        <span class="text-sm leading-5 font-extralight text-[#FFFFFF] text-center xl:block hidden">Effectuer une
+          réservation</span>
+      </div>
+
+      <div
+        class="group relative flex items-center justify-center gap-4 2xl:py-2 md:py-3 py-2 px-6 cursor-pointer transition-all duration-300 hover:bg-black"
+        onclick="togglePanel('contact')">
+        <i class="fa-solid fa-circle-exclamation rotate-180 2xl:text-sm xl:text-sm lg:text-xl md:text-lg text-base"></i>
+        <span class="text-sm leading-5 font-extralight text-[#FFFFFF] text-center xl:block hidden">Contactez-nous</span>
+      </div>
+
+      <a href="https://wa.me/1234567890" target="_blank"
+        class="group relative flex items-center justify-center gap-4 2xl:py-2 md:py-3 py-2 px-6 cursor-pointer transition-all duration-300 hover:bg-black">
+        <i
+          class="fa-brands fa-whatsapp 2xl:text-sm xl:text-sm md:text-xl text-base text-white 2xl:hidden xl:hidden"></i>
+        <span class="text-sm leading-5 font-extralight text-[#FFFFFF] text-center xl:block hidden">WhatsApp</span>
+      </a>
+    </div>
+
+    <div id="infoPanel"
+      class="fixed bottom-0 left-0 w-full bg-[#10233C] text-[#C1C1C1] transition-all duration-500 ease-in-out translate-y-full z-50">
+      <div
+        class="relative flex flex-col justify-center xl:items-center md:items-center items-start h-[250px] 2xl:h-60 md:h-64 xl:text-center md:text-center text-start 2xl:px-6 md:px-2 px-4 2xl:py-8 md:py-10 py-9">
+
+        <button onclick="closePanel()"
+          class="absolute 2xl:top-4 md:top-2 top-0 2xl:right-6 md:right-5 right-4 text-[#C1C1C1] 2xl:text-[44px] text-4xl hover:text-white leading-none">×</button>
+
+        <h1 id="panelTitle"
+          class="2xl:text-3xl xl:text-3xl md:text-[34px] text-[28px] 2xl:leading-9 xl:leading-9 md:leading-10 leading-8  mb-5 text-white font-extralight ">
+        </h1>
+
+        <div id="panelContent"
+          class="flex flex-col lg:flex-col 2xl:flex-row xl:flex-row justify-center items-center 2xl:items-start xl:items-start gap-8 2xl:gap-10 text-center 2xl:text-left xl:text-left">
+        </div>
+      </div>
+    </div>
+  </footer-bar>
+
+  <!-- toggle  -->
+  <script>
+    const toggleBtn = document.getElementById("menu-toggle");
+    const overlay = document.getElementById("menu-overlay");
+    const closeBtn = document.getElementById("menu-close");
+
+    toggleBtn.addEventListener("click", () => {
+      overlay.classList.remove("hidden");
+      overlay.classList.add("flex");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      overlay.classList.add("hidden");
+      overlay.classList.remove("flex");
+    });
+  </script>
+
+  <!-- footer bar script -->
+  <script>
+    const panel = document.getElementById('infoPanel');
+    const footer = document.getElementById('footerBar');
+    const panelTitle = document.getElementById('panelTitle');
+    const panelContent = document.getElementById('panelContent');
+    let panelOpen = false;
+    let currentPanel = '';
+
+    function togglePanel(type) {
+      if (panelOpen && currentPanel === type) {
+        closePanel();
+        return;
+      }
+
+      currentPanel = type;
+      panelContent.innerHTML = ''; // clear content first
+
+      if (type === 'hours') {
+        panelTitle.textContent = "Horaires d’ouverture:";
+        panelContent.innerHTML = `
+        <div class="flex flex-col md:flex-row 2xl:flex-row xl:flex-row md:justify-center justify-start items-start xl:items-center gap-5
+         2xl:gap-96 xl:gap-96 lg:gap-80 md:gap-52 md:py-2">
+          <div class="flex flex-col md:items-center items-start xl:items-center">
+            <h2 class="2xl:text-xl md:text-xl text-base font-extralight text-white 2xl:pb-0 md:pb-1">Dimanche - Jeudi</h2>
+            <p class="2xl:text-base md:text-base text-sm font-extralight text-[#BBBBBB]">16h00 - 2h00</p>
+          </div>
+          <div class="flex flex-col md:items-center items-start xl:items-center">
+            <h2 class="2xl:text-xl md:text-xl text-base font-extralight text-white 2xl:pb-0 pb-1">Vendredi - Samedi</h2>
+            <p class="2xl:text-base md:text-base text-sm font-extralight text-[#BBBBBB]">16h00 - 4h00</p>
+          </div>
+        </div>
+      `;
+      }
+
+      else if (type === 'reservation') {
+        panelTitle.textContent = "Effectuer une réservation :";
+        panelContent.innerHTML = `
+        <div class="flex flex-col lg:flex-row md:flex-row 2xl:flex-row xl:flex-row justify-start items-start xl:items-center gap-5 2xl:gap-96 xl:gap-[432px] lg:gap-96 md:gap-64 md:items-center">
+          <div class="md:flex-col lg:flex-col flex md:gap-0 gap-4 xl:items-center  md:items-center items-start md:py-2">
+            <a href="./index.html"><i class="fa-regular fa-envelope 2xl:text-[32px] md:text-4xl text-xl 2xl:pb-0 md:pb-3"></i></a>
+            <a href="./index.html"><h2 class="2xl:text-xl md:text-xl text-base font-light text-white ">En Ligne</h2></a>
+            
+          </div>
+          <div class="md:flex-col lg:flex-col flex md:gap-0 gap-4 xl:items-center md:items-center items-start">
+            <a href="https://wa.me/1234567890"><i class="fa-brands fa-whatsapp 2xl:text-3xl md:text-4xl text-xl 2xl:pb-0 md:pb-3"></i></a>
+            <a href="https://wa.me/1234567890"><h2 class="2xl:text-xl md:text-xl text-base font-light text-white">Sur WhatsApp</h2></a>
+          </div>
+        </div>
+      `;
+      }
+
+      else if (type === 'contact') {
+        panelTitle.textContent = "Contactez-nous";
+        panelContent.innerHTML = `
+        <div class="flex flex-col lg:flex-row 2xl:flex-row xl:flex-row md:flex-row justify-start items-start xl:items-center gap-5 2xl:gap-96 xl:gap-[448px] lg:gap-96 md:gap-64 md:py-2">
+          <div class="md:flex-col lg:flex-col flex-row md:gap-0 gap-4 lg:text-center md:text-center text-start items-start xl:items-center md:items-center ">
+            <a href=""><h2 class="2xl:text-xl xl:text-xl md:text-base text-lg font-extralight text-white ">E-mail</h2></a>
+            
+            <a href=""><p class="2xl:text-sm xl:text-sm md:text-sm text-xs font-thin text-[#fff]">info@ohnolulu.com</p></a>
+            
+          </div>
+          <div class="md:flex-col lg:flex-col flex-row md:gap-0 gap-4 lg:text-center md:text-center text-start items-start xl:items-center md:items-center">
+            <a href=""><h2 class="2xl:text-xl xl:text-xl md:text-base text-lg font-extralight text-white ">Téléphone</h2></a>
+            
+            <a href=""><p class="2xl:text-sm xl:text-sm md:text-sm text-xs font-thin text-[#fff]">+41 78 302 54 11</p></a>
+            
+          </div>
+        </div>
+      `;
+      }
+
+      footer.classList.add('translate-y-full');
+      panel.classList.remove('translate-y-full');
+      panel.classList.add('translate-y-0');
+      panelOpen = true;
+    }
+
+    function closePanel() {
+      panel.classList.remove('translate-y-0');
+      panel.classList.add('translate-y-full');
+      footer.classList.remove('translate-y-full');
+      panelOpen = false;
+    }
+  </script>
+
+
+  <!-- back drowp button  -->
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    // show/hide button on scroll
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        backToTop.classList.remove("hidden");
+      } else {
+        backToTop.classList.add("hidden");
+      }
+    });
+
+    // smooth scroll to top
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+
+</html>
