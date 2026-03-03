@@ -105,7 +105,7 @@
 
   <!-- Fullscreen Overlay Menu -->
   <div id="menu-overlay"
-    class="fixed inset-0 hidden flex-col items-center justify-center bg-br-bg z-[9999] overflow-y-auto xl:pt-0 md:pt-20 pb-10">
+    class="fixed inset-0 hidden flex-col items-center md:justify-center bg-br-bg z-[9999] overflow-y-auto xl:pt-0 md:pt-20 pb-10">
     <!-- Close Button -->
     <button id="menu-close"
       class="fixed top-[30px] right-20 max-[980px]:right-5 text-4xl font-bold z-[10000] text-white">&times;</button>
@@ -115,7 +115,7 @@
     <img src="./assets/img/BR-removebg-preview.png" class="w-36" alt="">
 
     <!-- Navigation Links -->
-    <ul class="md:space-y-6 space-y-4 text-center mb-10">
+    <ul class="md:space-y-6 space-y-4 text-center my-10">
       <li><a href="./index.html"
           class="md:text-3xl text-lg font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
             data-lang="fr">Accueil</span><span data-lang="en">Home</span></a></li>
@@ -642,6 +642,6 @@
     }, { threshold: 0.08 });
     document.querySelectorAll(".rv, .rvl, .rvr").forEach(el => io.observe(el));
   </script>
-  
+
 </body>
 </html>
