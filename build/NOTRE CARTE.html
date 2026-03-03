@@ -98,7 +98,7 @@
 
   <!-- Fullscreen Overlay Menu -->
   <div id="menu-overlay"
-    class="fixed inset-0 hidden flex-col items-center justify-center bg-br-bg z-[9999] overflow-y-auto xl:pt-0 pt-20 pb-10">
+    class="fixed inset-0 hidden flex-col items-center justify-center bg-br-bg z-[9999] overflow-y-auto xl:pt-0 md:pt-20 pb-10">
     <!-- Close Button -->
     <button id="menu-close"
       class="fixed top-[30px] right-20 max-[980px]:right-5 text-4xl font-bold z-[10000] text-white">&times;</button>
@@ -106,16 +106,6 @@
     <!-- Logo in Menu -->
 
     <img src="./assets/img/BR-removebg-preview.png" class="w-36" alt="">
-    <!-- <svg viewBox="0 0 130 145" fill="none" xmlns="http://www.w3.org/2000/svg"
-      style="height:64px;width:auto;margin-bottom:40px;">
-      <rect x="30" y="30" width="66" height="66" stroke="#BF8A30" stroke-width="2" fill="none" />
-      <line x1="30" y1="78" x2="78" y2="78" stroke="#BF8A30" stroke-width="2" />
-      <line x1="68" y1="6" x2="96" y2="52" stroke="#BF8A30" stroke-width="2" />
-      <text x="63" y="116" text-anchor="middle" font-family="'Outfit',sans-serif" font-weight="300" font-size="12.5"
-        letter-spacing="4.5" fill="#EFE9DF">BÂTON</text>
-      <text x="63" y="133" text-anchor="middle" font-family="'Outfit',sans-serif" font-weight="300" font-size="12.5"
-        letter-spacing="4.5" fill="#EFE9DF">ROUGE</text>
-    </svg> -->
 
     <!-- Navigation Links -->
     <ul class="md:space-y-6 space-y-4 text-center mb-10">
@@ -531,6 +521,6 @@
     }, { threshold: 0.08 });
     document.querySelectorAll(".rv, .rvl, .rvr").forEach(el => io.observe(el));
   </script>
+  
 </body>
-
 </html>
