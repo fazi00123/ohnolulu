@@ -105,7 +105,7 @@
 
   <!-- Fullscreen Overlay Menu -->
   <div id="menu-overlay"
-    class="fixed inset-0 hidden flex-col items-center justify-center bg-br-bg z-[9999] overflow-y-auto xl:pt-0 md:pt-20 pt-32">
+    class="fixed inset-0 hidden flex-col items-center justify-center bg-br-bg z-[9999] overflow-y-auto xl:pt-0 pt-20 pb-10">
     <!-- Close Button -->
     <button id="menu-close"
       class="fixed top-[30px] right-20 max-[980px]:right-5 text-4xl font-bold z-[10000] text-white">&times;</button>
@@ -125,15 +125,15 @@
     </svg> -->
 
     <!-- Navigation Links -->
-    <ul class="space-y-6 text-center mb-10">
+    <ul class="md:space-y-6 space-y-4 text-center mb-10">
       <li><a href="./index.html"
-          class="text-3xl font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
+          class="md:text-3xl text-lg font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
             data-lang="fr">Accueil</span><span data-lang="en">Home</span></a></li>
       <li><a href="./NOTRE CARTE.html"
-          class="text-3xl font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
+          class="md:text-3xl text-lg font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
             data-lang="fr">La carte</span><span data-lang="en">Menu</span></a></li>
       <li><a href="./contact.html"
-          class="text-3xl font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200">CONTACT
+          class="md:text-3xl text-lg font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200">CONTACT
           / RESERVATIONS</a></li>
     </ul>
 
@@ -145,11 +145,11 @@
     <!-- Lang -->
     <div class="flex space-x-6 mb-10">
       <button
-        class="text-2xl tracking-[0.16em] uppercase font-light text-br-gold hover:text-br-cream transition-colors duration-200"
+        class="md:text-2xl text-lg tracking-[0.16em] uppercase font-light text-br-gold hover:text-br-cream transition-colors duration-200"
         onclick="setLang('fr')">FR</button>
       <span class="opacity-50">|</span>
       <button
-        class="text-2xl tracking-[0.16em] uppercase font-light text-br-gold hover:text-br-cream transition-colors duration-200"
+        class="md:text-2xl text-lg tracking-[0.16em] uppercase font-light text-br-gold hover:text-br-cream transition-colors duration-200"
         onclick="setLang('en')">EN</button>
     </div>
 
@@ -168,7 +168,7 @@
 
   <!-- INFOS -->
   <section class="py-[160px] px-14 max-[980px]:px-5 max-[980px]:py-[120px] pb-[100px] max-[980px]:pb-20" id="infos">
-    <div class="grid grid-cols-2 gap-20 items-start max-w-[1120px] mx-auto max-[980px]:grid-cols-1 max-[980px]:gap-16">
+    <div class="grid grid-cols-2 gap-20 items-start max-w-[1120px] mx-auto max-[980px]:grid-cols-1 max-[980px]:gap-16 pt-10 md:pt-0">
       <div class="rv opacity-0 translate-y-[28px] transition-all duration-[900ms] ease-in-out">
         <div data-lang="fr">
           <h2 class="font-cormorant font-light text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.13] text-br-cream mb-8">On

@@ -188,7 +188,7 @@
 
   <!-- Fullscreen Overlay Menu -->
   <div id="menu-overlay"
-    class="fixed inset-0 hidden flex-col items-center justify-center bg-br-bg z-[9999] overflow-y-auto xl:pt-0 md:pt-20 pt-32">
+    class="fixed inset-0 hidden flex-col items-center justify-center bg-br-bg z-[9999] overflow-y-auto xl:pt-0 pt-20 pb-10">
     <!-- Close Button -->
     <button id="menu-close"
       class="fixed top-[30px] right-20 max-[980px]:right-5 text-4xl font-bold z-[10000] text-white">&times;</button>
@@ -196,27 +196,17 @@
     <!-- Logo in Menu -->
 
     <img src="./assets/img/BR-removebg-preview.png" class="w-36" alt="">
-    <!-- <svg viewBox="0 0 130 145" fill="none" xmlns="http://www.w3.org/2000/svg"
-      style="height:64px;width:auto;margin-bottom:40px;">
-      <rect x="30" y="30" width="66" height="66" stroke="#BF8A30" stroke-width="2" fill="none" />
-      <line x1="30" y1="78" x2="78" y2="78" stroke="#BF8A30" stroke-width="2" />
-      <line x1="68" y1="6" x2="96" y2="52" stroke="#BF8A30" stroke-width="2" />
-      <text x="63" y="116" text-anchor="middle" font-family="'Outfit',sans-serif" font-weight="300" font-size="12.5"
-        letter-spacing="4.5" fill="#EFE9DF">BÂTON</text>
-      <text x="63" y="133" text-anchor="middle" font-family="'Outfit',sans-serif" font-weight="300" font-size="12.5"
-        letter-spacing="4.5" fill="#EFE9DF">ROUGE</text>
-    </svg> -->
 
     <!-- Navigation Links -->
-    <ul class="space-y-6 text-center mb-10">
+    <ul class="md:space-y-6 space-y-4 text-center mb-10">
       <li><a href="./index.html"
-          class="text-3xl font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
+          class="md:text-3xl text-lg font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
             data-lang="fr">Accueil</span><span data-lang="en">Home</span></a></li>
       <li><a href="./NOTRE CARTE.html"
-          class="text-3xl font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
+          class="md:text-3xl text-lg font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
             data-lang="fr">La carte</span><span data-lang="en">Menu</span></a></li>
       <li><a href="./contact.html"
-          class="text-3xl font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200">CONTACT
+          class="md:text-3xl text-lg font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200">CONTACT
           / RESERVATIONS</a></li>
     </ul>
 
@@ -227,11 +217,11 @@
     <!-- Lang -->
     <div class="flex space-x-6 mb-10">
       <button
-        class="text-2xl tracking-[0.16em] uppercase font-light text-br-gold hover:text-br-cream transition-colors duration-200"
+        class="md:text-2xl text-lg tracking-[0.16em] uppercase font-light text-br-gold hover:text-br-cream transition-colors duration-200"
         onclick="setLang('fr')">FR</button>
       <span class="opacity-50">|</span>
       <button
-        class="text-2xl tracking-[0.16em] uppercase font-light text-br-gold hover:text-br-cream transition-colors duration-200"
+        class="md:text-2xl text-lg tracking-[0.16em] uppercase font-light text-br-gold hover:text-br-cream transition-colors duration-200"
         onclick="setLang('en')">EN</button>
     </div>
 
@@ -253,9 +243,11 @@
     <div class="absolute inset-0 bg-neutral-900" id="heroBg"
       style="background: linear-gradient(to bottom, rgba(32,6,9,0.15) 0%, rgba(32,6,9,0.0) 18%, rgba(32,6,9,0.62) 65%, #200609 100%), url('https://lh3.googleusercontent.com/p/AF1QipN3tHDW-UY_Zxj5dIt87I0CvJ879xwFkCxv3Iwm=s1360-w1360-h1020') center/cover no-repeat;">
     </div>
+  <!-- NEW OVERLAY -->
+  <div class="absolute inset-0 bg-black/50 z-[1]"></div>
 
     <div
-      class="relative xl:top-20 z-[2] px-[56px] pb-[96px] max-[980px]:px-5 max-[980px]:pb-16 animate-[up_1.4s_cubic-bezier(0.16,1,0.3,1)_both]">
+      class="relative xl:top-10 -top-20 z-[2] px-[56px] pb-[96px] max-[980px]:px-5 max-[980px]:pb-16 animate-[up_1.4s_cubic-bezier(0.16,1,0.3,1)_both]">
       <p
         class="text-[0.68rem] tracking-[0.3em] uppercase text-br-gold mb-[22px] flex items-center gap-[14px] before:content-[''] before:w-[28px] before:h-[1px] before:bg-br-gold before:flex-shrink-0">
         Genève · Boulevard Georges-Favon 14</p>
@@ -290,95 +282,6 @@
       </div>
     </div>
   </section>
-
-  <!-- TEXTES -->
-  <!-- <section class="bg-br-bg py-[120px] px-[56px] max-[980px]:py-20 max-[980px]:px-5">
-    <div
-      class="grid grid-cols-2 gap-[100px] items-start max-w-[1120px] mx-auto max-[980px]:grid-cols-1 max-[980px]:gap-[52px]">
-      <div class="rv opacity-0 translate-y-[28px] transition-all duration-[900ms] ease-in-out">
-        <div class="w-9 h-[1px] bg-br-gold mb-9"></div>
-        <div data-lang="fr">
-          <p class="font-cormorant font-light text-[clamp(1.5rem,2.3vw,2rem)] leading-[1.75] text-br-cream">
-            Bien trop souvent, on oublie de s'arrêter.<br>
-            De souffler.<br>
-            De profiter.<br><br>
-            Alors quand le moment arrive, on veut quelque chose de <em class="italic text-br-gold-lt">vrai.</em><br><br>
-            Un cocktail bien fait.<br>
-            Des produits de qualité.<br>
-            Une ambiance qui permet de décrocher.<br><br>
-            La musique s'installe doucement.<br>
-            Les lumières changent.<br>
-            Les discussions se prolongent.<br>
-            La soirée prend son rythme.<br><br>
-            Certaines passent simplement.<br>
-            D'others deviennent des <em class="italic text-br-gold-lt">souvenirs.</em>
-          </p>
-        </div>
-        <div data-lang="en">
-          <p class="font-cormorant font-light text-[clamp(1.5rem,2.3vw,2rem)] leading-[1.75] text-br-cream">
-            Too often, we forget to stop.<br>
-            To breathe.<br>
-            To enjoy the moment.<br><br>
-            So when the time comes, you want something <em class="italic text-br-gold-lt">real.</em><br><br>
-            A well-made cocktail.<br>
-            Quality ingredients.<br>
-            An atmosphere that lets you unwind.<br><br>
-            Music that settles in gently.<br>
-            Lights that shift.<br>
-            Conversations that stretch on.<br>
-            The night finds its rhythm.<br><br>
-            Some evenings just pass.<br>
-            Others become <em class="italic text-br-gold-lt">memories.</em>
-          </p>
-        </div>
-      </div>
-      <div class="rv opacity-0 translate-y-[28px] transition-all duration-[900ms] ease-in-out"
-        style="transition-delay:.18s">
-        <div data-lang="fr">
-          <div
-            class="text-[0.66rem] tracking-[0.26em] uppercase text-br-gold mb-7 flex items-center gap-3 after:content-[''] after:flex-1 after:h-[1px] after:bg-br-gold/20">
-            L'esprit Bâton-Rouge</div>
-          <p
-            class="font-cormorant font-light text-[clamp(1.3rem,1.9vw,1.65rem)] leading-[1.82] text-br-dim max-[600px]:text-[1.2rem]">
-            <strong class="font-light text-br-cream">Un afterwork qui déborde.</strong><br>
-            <strong class="font-light text-br-cream">Un anniversaire qu'on fête sans chichi.</strong><br>
-            <strong class="font-light text-br-cream">Un simple verre entre amis.</strong><br><br>
-            Bâton-Rouge est là pour ça.<br><br>
-            Pour les discussions qui durent.<br>
-            Pour les rires qui résonnent.<br>
-            Pour les rencontres inattendues.<br><br>
-            On vient comme on est.<br>
-            On partage un cocktail.<br>
-            On commande des Rollini.<br><br>
-            Et presque naturellement,<br>
-            on finit tous au bar dansant.<br><br>
-            <strong class="font-light text-br-cream">Juste pour vivre l'instant.</strong>
-          </p>
-        </div>
-        <div data-lang="en">
-          <div
-            class="text-[0.66rem] tracking-[0.26em] uppercase text-br-gold mb-7 flex items-center gap-3 after:content-[''] after:flex-1 after:h-[1px] after:bg-br-gold/20">
-            The Bâton-Rouge spirit</div>
-          <p
-            class="font-cormorant font-light text-[clamp(1.3rem,1.9vw,1.65rem)] leading-[1.82] text-br-dim max-[600px]:text-[1.2rem]">
-            <strong class="font-light text-br-cream">An afterwork that runs late.</strong><br>
-            <strong class="font-light text-br-cream">A birthday celebrated without fuss.</strong><br>
-            <strong class="font-light text-br-cream">A simple drink with friends.</strong><br><br>
-            Bâton-Rouge is here for all of that.<br><br>
-            For conversations that last.<br>
-            For laughs that linger.<br>
-            For unexpected encounters.<br><br>
-            Come as you are.<br>
-            Share a cocktail.<br>
-            Order some Rollini.<br><br>
-            And almost without realising it,<br>
-            everyone ends up at the dance bar.<br><br>
-            <strong class="font-light text-br-cream">Just living the moment.</strong>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <!-- GALERIE -->
   <div class="bg-br-bg-deep">
@@ -749,6 +652,6 @@
     }, { threshold: 0.08 });
     document.querySelectorAll(".rv, .rvl, .rvr").forEach(el => io.observe(el));
   </script>
-</body>
 
+</body>
 </html>
