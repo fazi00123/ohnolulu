@@ -10,75 +10,71 @@
 </head>
 
 <body>
-    <!-- navbar  -->
-    <nav class="bg-[#430721] 2xl:py-5 xl:py-5 md:py-3 py-4 2xl:px-24 lg:px-10 md:px-9 px-5 
-fixed top-0 left-0 w-full z-[10001] shadow-md"> <!-- 👈 fixed navbar -->
-        <div class="flex justify-center items-center">
-            <!-- Logo Center -->
-            <img src="./assets/img/Logo_Ohnolulu-copie5-Copie.png" class="2xl:w-32 xl:w-28 md:w-28 w-24" alt="Logo">
+  <!-- navbar  -->
+  <nav
+    class="bg-[#430721] 2xl:py-5 xl:py-5 md:py-3 py-4 2xl:px-24 lg:px-10 md:px-9 px-5 fixed top-0 left-0 w-full z-50 shadow-md">
+    <!-- 👈 fixed navbar -->
+    <div class="flex justify-center items-center">
+      <!-- Logo Center -->
+      <img src="./assets/img/Logo_Ohnolulu-copie5-Copie.png" class="2xl:w-32 xl:w-28 md:w-28 w-24" alt="Logo">
 
-            <!-- Toggle Button Right -->
-            <button id="menu-toggle"
-                class="absolute top-1/2 -translate-y-1/2 xl:right-20 lg:right-14 md:right-9 right-5 2xl:right-80">
-                <div class="2xl:space-y-1.5 lg:space-y-1.5 space-y-1">
-                    <span class="block 2xl:w-7 lg:w-6 w-6 2xl:h-[2px] lg:h-[2px] h-[2px] bg-white"></span>
-                    <span class="block 2xl:w-7 lg:w-6 w-6 2xl:h-[2px] lg:h-[2px] h-[2px] bg-white"></span>
-                    <span class="block 2xl:w-7 lg:w-6 w-6 2xl:h-[2px] lg:h-[2px] h-[2px] bg-white"></span>
-                </div>
-            </button>
-
-            <!-- Close Button (Inside Nav) -->
-            <button id="menu-close-nav"
-                class="absolute top-1/2 -translate-y-1/2 xl:right-20 lg:right-14 md:right-9 right-5 2xl:right-80 text-4xl font-bold hidden items-center justify-center text-white">
-                &times;
-            </button>
+      <!-- Toggle Button Right -->
+      <button id="menu-toggle"
+        class="absolute top-1/2 -translate-y-1/2 xl:right-20 lg:right-14 md:right-9 right-5 2xl:right-80">
+        <div class="2xl:space-y-1.5 lg:space-y-1.5 space-y-1">
+          <span class="block 2xl:w-7 lg:w-6 w-6 2xl:h-[2px] lg:h-[2px] h-[2px] bg-white"></span>
+          <span class="block 2xl:w-7 lg:w-6 w-6 2xl:h-[2px] lg:h-[2px] h-[2px] bg-white"></span>
+          <span class="block 2xl:w-7 lg:w-6 w-6 2xl:h-[2px] lg:h-[2px] h-[2px] bg-white"></span>
         </div>
-
-    </nav>
+      </button>
+    </div>
 
     <!-- Fullscreen Overlay Menu -->
     <div id="menu-overlay"
-        class="fixed inset-0 bg-[#430721] hidden flex-col items-center text-white z-[9999] overflow-y-auto md:py-10 py-6">
+      class="fixed inset-0 bg-[#430721] hidden flex-col items-center text-white z-[9999] overflow-y-auto md:py-10">
 
+      <!-- Close Button -->
+      <button id="menu-close"
+        class="fixed 2xl:top-7 xl:top-10 lg:top-6 md:top-7 top-7 xl:right-20 lg:right-16 md:right-9 right-6 2xl:right-80 text-4xl font-bold z-[10000] text-[#FFFFFF]">&times;</button>
 
-        <!-- Logo in Menu (Top) -->
-        <img src="./assets/img/Logo_Ohnolulu-copie5-Copie.png"
-            class="2xl:max-w-48 md:max-w-48 max-w-36 2xl:mb-10 md:mb-20 mb-10 lg:pt-0 md:pt-0 pt-16" alt="Logo">
+      <!-- Logo in Menu (Top) -->
+      <img src="./assets/img/Logo_Ohnolulu-copie5-Copie.png"
+        class="2xl:max-w-48 md:max-w-48 max-w-36 2xl:mb-10 md:mb-20 mb-10 lg:pt-0 md:pt-0 pt-16" alt="Logo">
 
-        <!-- Navigation Links -->
-        <ul class="2xl:space-y-5 space-y-6 text-base md:text-2xl mb-10 text-center font-extralight text-[#FFFFFF]">
-            <li class="2xl:pt-10 md:pt-3 pt-4 text-base"><a href="./index.html">ACCUEIL</a></li>
-            <li class=" text-base"><a href="./NOTRE CARTE.html">NOTRE CARTE</a></li>
-            <li class=" text-base"><a href="./contact.html">CONTACT / RESERVATIONS</a></li>
-        </ul>
+      <!-- Navigation Links -->
+      <ul class="2xl:space-y-5 space-y-6 text-base md:text-2xl mb-10 text-center font-extralight text-[#FFFFFF]">
+        <li class="2xl:pt-10 md:pt-3 pt-4 text-base"><a href="./index.html">ACCUEIL</a></li>
+        <li class=" text-base"><a href="./NOTRE CARTE.html">NOTRE CARTE</a></li>
+        <li class=" text-base"><a href="./contact.html">CONTACT / RESERVATIONS</a></li>
+      </ul>
 
-        <!-- Images -->
-        <div class="flex space-x-3 2xl:pt-11 md:pt-7 pt-11 2xl:pb-5 pb-8">
-            <a href="#"><img src="./assets/img/en.png" alt="EN" class="w-5 h-5 object-contain"></a>
-            <a href="#"><img src="./assets/img/fr.png" alt="FR" class="w-5 h-5 object-contain"></a>
-        </div>
+      <!-- Images -->
+      <div class="flex space-x-3 2xl:pt-11 md:pt-7 pt-11 2xl:pb-5 pb-8">
+        <a href="#"><img src="./assets/img/en.png" alt="EN" class="w-5 h-5 object-contain"></a>
+        <a href="#"><img src="./assets/img/fr.png" alt="FR" class="w-5 h-5 object-contain"></a>
+      </div>
 
-        <!-- Text -->
-        <p
-            class="text-center 2xl:text-xl md:text-xl text-sm font-extralight 2xl:leading-4 md:leading-6 leading-4 pb-5 text-[#FFFFFF]">
-            Restez connecté
-        </p>
+      <!-- Text -->
+      <p
+        class="text-center 2xl:text-xl md:text-xl text-sm font-extralight 2xl:leading-4 md:leading-6 leading-4 pb-5 text-[#FFFFFF]">
+        Restez connecté
+      </p>
 
-        <!-- Buttons / Social Icons -->
-        <div class="flex 2xl:gap-5 gap-4 2xl:mb-12 md:mb-12 mb-9">
-            <a href="https://instagram.com" target="_blank"
-                class="flex items-center justify-center 2xl:w-9 w-8 2xl:h-9 h-8 bg-white rounded-full hover:shadow-lg transition">
-                <i class="fab fa-instagram text-[#404D5C] 2xl:text-base text-sm"></i>
-            </a>
+      <!-- Buttons / Social Icons -->
+      <div class="flex 2xl:gap-5 gap-4 2xl:mb-12 md:mb-12 mb-9">
+        <a href="https://instagram.com" target="_blank"
+          class="flex items-center justify-center 2xl:w-9 w-8 2xl:h-9 h-8 bg-white rounded-full hover:shadow-lg transition">
+          <i class="fab fa-instagram text-[#404D5C] 2xl:text-base text-sm"></i>
+        </a>
 
-            <a href="https://facebook.com" target="_blank"
-                class="flex items-center justify-center 2xl:w-9 w-8 2xl:h-9 h-8 bg-white rounded-full hover:shadow-lg transition">
-                <i class="fab fa-facebook-f text-[#404D5C] 2xl:text-base text-sm"></i>
-            </a>
-        </div>
+        <a href="https://facebook.com" target="_blank"
+          class="flex items-center justify-center 2xl:w-9 w-8 2xl:h-9 h-8 bg-white rounded-full hover:shadow-lg transition">
+          <i class="fab fa-facebook-f text-[#404D5C] 2xl:text-base text-sm"></i>
+        </a>
+      </div>
     </div>
-
-    <!-- end navbar  -->
+  </nav>
+  <!-- end navbar  -->
 
     <!-- hero img   -->
     <section style="background-image: url(./assets/img/Pic-34-1.jpg);"
@@ -2096,39 +2092,22 @@ fixed top-0 left-0 w-full z-[10001] shadow-md"> <!-- 👈 fixed navbar -->
         </div>
     </footer-bar>
 
+  <!-- toggle  -->
+  <script>
+    const toggleBtn = document.getElementById("menu-toggle");
+    const overlay = document.getElementById("menu-overlay");
+    const closeBtn = document.getElementById("menu-close");
 
+    toggleBtn.addEventListener("click", () => {
+      overlay.classList.remove("hidden");
+      overlay.classList.add("flex");
+    });
 
-    <script>
-        const nav_el = document.querySelector('nav');
-        const menuToggle = document.getElementById('menu-toggle');
-        const menuCloseNav = document.getElementById('menu-close-nav');
-        const menuOverlay = document.getElementById('menu-overlay');
-
-        menuToggle.addEventListener('click', () => {
-            menuOverlay.classList.remove('hidden');
-            menuOverlay.classList.add('flex');
-            menuToggle.classList.add('hidden');
-            menuCloseNav.classList.remove('hidden');
-            menuCloseNav.classList.add('flex');
-            nav_el.style.backgroundColor = 'transparent';
-            nav_el.style.boxShadow = 'none';
-            document.body.style.overflow = 'hidden';
-        });
-
-        menuCloseNav.addEventListener('click', () => {
-            menuOverlay.classList.add('hidden');
-            menuOverlay.classList.remove('flex');
-            menuToggle.classList.remove('hidden');
-            menuCloseNav.classList.add('hidden');
-            menuCloseNav.classList.remove('flex');
-            // Restore nav style
-            nav_el.style.backgroundColor = '';
-            nav_el.style.boxShadow = '';
-            document.body.style.overflow = '';
-        });
-    </script>
-
-
+    closeBtn.addEventListener("click", () => {
+      overlay.classList.add("hidden");
+      overlay.classList.remove("flex");
+    });
+  </script>
 
     <!-- footer bar script -->
     <script>
@@ -2216,7 +2195,6 @@ fixed top-0 left-0 w-full z-[10001] shadow-md"> <!-- 👈 fixed navbar -->
         }
     </script>
 
-
     <!-- imges  -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -2298,6 +2276,7 @@ fixed top-0 left-0 w-full z-[10001] shadow-md"> <!-- 👈 fixed navbar -->
             });
         });
     </script>
+
     <!-- back drowp button  -->
     <script>
         const backToTop = document.getElementById("backToTop");
