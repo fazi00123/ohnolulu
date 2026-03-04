@@ -259,25 +259,24 @@
   </div>
 
   <!-- HERO -->
-  <section class="relative h-screen min-h-[700px] flex items-center xl:items-start overflow-hidden">
+  <section class="relative h-screen min-h-[800px] flex items-center xl:items-start overflow-hidden">
     <div class="absolute inset-0 bg-neutral-900" id="heroBg"
-      style="background: linear-gradient(to bottom, rgba(32,6,9,0.15) 0%, rgba(32,6,9,0.0) 18%, rgba(32,6,9,0.62) 65%, #200609 100%), url('https://lh3.googleusercontent.com/p/AF1QipN3tHDW-UY_Zxj5dIt87I0CvJ879xwFkCxv3Iwm=s1360-w1360-h1020') center/cover no-repeat;">
+      style="background: linear-gradient(to bottom, rgba(32,6,9,0.15) 0%, rgba(32,6,9,0.0) 18%, rgba(32,6,9,0.62) 65%, #200609 100%), url('./assets/img/heroimg.jpg') center/cover no-repeat;">
     </div>
     <!-- NEW OVERLAY -->
     <div class="absolute inset-0 bg-black/50 z-[1]"></div>
 
     <div
-      class="relative xl:top-48 z-[2] px-[56px] pb-[96px] max-[980px]:px-5 max-[980px]:pb-16 animate-[up_1.4s_cubic-bezier(0.16,1,0.3,1)_both]">
+      class="relative top-28 z-[2] px-[56px] pb-[96px] max-[980px]:px-5 max-[980px]:pb-16 animate-[up_1.4s_cubic-bezier(0.16,1,0.3,1)_both]">
       <p
         class="text-[0.68rem] tracking-[0.3em] uppercase text-br-gold mb-[22px] flex items-center gap-[14px] before:content-[''] before:w-[28px] before:h-[1px] before:bg-br-gold before:flex-shrink-0">
         · Boulevard Georges-Favon 14</p>
 
       <div data-lang="fr">
         <h1
-          class="font-cormorant font-light text-[clamp(3.2rem,8vw,7rem)] leading-[1.02] text-br-cream mb-[26px] max-w-[820px] max-[600px]:text-[clamp(2.6rem,11vw,3.2rem)]">
-          Bâton-Rouge</h1>
-        <p class="text-[0.97rem] font-light text-br-dim leading-[1.8] max-w-[400px] mb-[44px]">Un verre pour commencer.
-          Une soirée pour se souvenir.</p>
+          class="font-cormorant font-light text-[clamp(3.2rem,8vw,7rem)] leading-[1.02] text-br-cream mb-[26px] max-w-[1820px] max-[600px]:text-[clamp(2.6rem,11vw,3.2rem)]">
+          Bâton-Rouge <br> Un verre pour <em class="italic text-br-gold-lt">commencer</em>. <br>Une soirée pour se souvenir.</h1>
+
       </div>
       <div data-lang="en" aria-hidden="true">
         <h1
@@ -300,8 +299,10 @@
         </a>
       </div>
 
+              <p class="text-sm text-br-gold-lt text-center font-light leading-[1.8] pt-16">DÉFILER VERS LE BAS</p>
+
       <!-- line dot moving  -->
-     <div class="flex justify-center pt-10">
+     <div class="flex justify-center">
   <div class="relative w-full max-w-[600px] h-[120px]">
 
     <!-- Horizontal line (Perfect center) -->
@@ -363,7 +364,7 @@
       <div
         class="relative h-[560px] max-[980px]:h-[320px] max-[600px]:h-[260px] rv opacity-0 -translate-x-[28px] transition-all duration-[900ms] ease-in-out">
         <div class="absolute top-0 left-0 w-[76%] h-[78%] overflow-hidden max-[600px]:w-full max-[600px]:h-full">
-          <img src="https://images.unsplash.com/photo-1560512823-829485b8bf24?w=900&q=85&auto=format&fit=crop"
+          <img src="./assets/img/img8.jpg"
             alt="Ambiance bar" loading="lazy" class="w-full h-full object-cover brightness-[0.82]" />
         </div>
         <!-- <div
@@ -649,8 +650,8 @@
         pTitle.innerHTML = '<span data-lang="fr">Réservations</span><span data-lang="en">Reservations</span>';
         pContent.innerHTML = `
         <div class="flex flex-col md:flex-row justify-center gap-10 md:gap-24 uppercase tracking-[2px] text-xs">
-          <a href="./contact.html" class="hover:text-br-gold transition duration-200"><i class="far fa-envelope mb-2 block text-2xl"></i>Formulaire</a>
-          <a href="https://wa.link/el0ytq" target="_blank" class="hover:text-br-gold transition duration-200"><i class="fab fa-whatsapp mb-2 block text-2xl"></i>WhatsApp</a>
+          <a href="./contact.html" class="flex flex-row items-center justify-center gap-2 hover:text-br-gold transition duration-200"><i class="far fa-envelope block text-2xl"></i>Formulaire</a>
+          <a href="https://wa.link/el0ytq" target="_blank" class="flex flex-row items-center justify-center gap-2 hover:text-br-gold transition duration-200"><i class="fab fa-whatsapp block text-2xl"></i>WhatsApp</a>
         </div>
       `;
       } else if (type === 'contact') {
@@ -658,7 +659,7 @@
         pContent.innerHTML = `
         <div class="flex flex-col md:flex-row justify-center gap-10 md:gap-24 uppercase tracking-[2px] text-xs">
           <div><p class="font-bold mb-2">Email</p><p class="opacity-60 text-none"><a href="mailto:info@batonrouge.swiss" class="hover:text-br-gold transition duration-200">info@batonrouge.swiss</a></p></div>
-          <div><p class="font-bold mb-2">Phone</p><p class="opacity-60">+41 78 235 01 96</p></div>
+          <div><p class="font-bold mb-2">Phone</p><p class="opacity-60"> <a href="tel:+41782350196" class="hover:text-br-gold transition duration-200">+41 78 235 01 96</a></p></div>
         </div>
       `;
       }

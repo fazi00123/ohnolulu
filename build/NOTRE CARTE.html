@@ -480,8 +480,8 @@
         pTitle.innerHTML = '<span data-lang="fr">Réservations</span><span data-lang="en">Reservations</span>';
         pContent.innerHTML = `
         <div class="flex flex-col md:flex-row justify-center gap-10 md:gap-24 uppercase tracking-[2px] text-xs">
-          <a href="./contact.html" class="hover:text-br-gold transition duration-200"><i class="far fa-envelope mb-2 block text-2xl"></i>Formulaire</a>
-          <a href="https://wa.link/el0ytq" target="_blank" class="hover:text-br-gold transition duration-200"><i class="fab fa-whatsapp mb-2 block text-2xl"></i>WhatsApp</a>
+          <a href="./contact.html" class=" flex flex-row items-center justify-center gap-2 hover:text-br-gold transition duration-200"><i class="far fa-envelope block text-2xl"></i>Formulaire</a>
+          <a href="https://wa.link/el0ytq" target="_blank" class="flex flex-row items-center justify-center gap-2 hover:text-br-gold transition duration-200"><i class="fab fa-whatsapp block text-2xl"></i>WhatsApp</a>
         </div>
       `;
       } else if (type === 'contact') {
@@ -489,7 +489,7 @@
         pContent.innerHTML = `
         <div class="flex flex-col md:flex-row justify-center gap-10 md:gap-24 uppercase tracking-[2px] text-xs">
           <div><p class="font-bold mb-2">Email</p><p class="opacity-60 text-none"><a href="mailto:info@batonrouge.swiss" class="hover:text-br-gold transition duration-200">info@batonrouge.swiss</a></p></div>
-          <div><p class="font-bold mb-2">Phone</p><p class="opacity-60">+41 78 235 01 96</p></div>
+          <div><p class="font-bold mb-2">Phone</p><p class="opacity-60"> <a href="tel:+41782350196" class="hover:text-br-gold transition duration-200">+41 78 235 01 96</a></p></div>
         </div>
       `;
       }
