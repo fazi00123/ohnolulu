@@ -20,18 +20,18 @@ h2 , h1 , p {
   font-family: Outfit;
 }
   */
-body{
+/* body{
   font-family: "Outfit", sans-serif;
 
-}
-
+} */
+/* 
 @layer utilities {
   @keyframes dotFloat {
     0%, 100% {
-      transform: translate(-50%, -5px); /* thoda neeche (start near line) */
+      transform: translate(-50%, -5px); 
     }
     50% {
-      transform: translate(-50%, -55px); /* upar move kare */
+      transform: translate(-50%, -55px); 
     }
   }
 
@@ -46,5 +46,5 @@ body{
 }
 .hover-img:hover {
   filter: brightness(0.7);
-  /* transform: scale(1.05); */
-}
+ 
+} */

@@ -103,6 +103,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -129,6 +130,7 @@
       }
     }
   </script>
+
   <style>
     [data-lang="en"] {
       display: none;
@@ -161,7 +163,26 @@
       opacity: 1 !important;
       transform: none !important;
     }
+
+    /* line dot moving css start */
+    @layer utilities {
+  @keyframes dotFloat {
+    0%, 100% {
+      transform: translate(-50%, 0px);
+    }
+    50% {
+      transform: translate(-50%, -40px);
+    }
+  }
+
+  .animate-dotFloat {
+    animation: dotFloat 2.5s ease-in-out infinite;
+  }
+}
+
+    /* line dot moving css end */
   </style>
+
 </head>
 
 <body>
@@ -171,7 +192,7 @@
     <div class="flex justify-center items-center relative">
       <!-- Logo Center -->
       <a href="./index.html" aria-label="Bâton-Rouge">
-        <img src="./assets/img/BR.png" class="w-20" alt="">
+        <img src="./assets/img/baton rouge.png" class="w-24" alt="">
       </a>
 
       <!-- Toggle Button Right -->
@@ -195,7 +216,7 @@
 
     <!-- Logo in Menu -->
 
-    <img src="./assets/img/BR-removebg-preview.png" class="w-28" alt="">
+    <img src="./assets/img/baton rouge.png" class="w-28" alt="">
 
     <!-- Navigation Links -->
     <ul class="md:space-y-6 space-y-4 text-center my-10">
@@ -218,11 +239,11 @@
     <div class="flex space-x-6 mb-10">
       <button
         class="md:text-2xl text-lg tracking-[0.16em] uppercase font-light text-br-gold hover:text-br-cream transition-colors duration-200"
-        onclick="setLang('fr')">FR</button>
-      <span class="opacity-50">|</span>
+        onclick="setLang('fr')"><img src="./assets/img/france (1).png" class="w-6" alt=""></button>
+      <span class="opacity-50 text-white">|</span>
       <button
         class="md:text-2xl text-lg tracking-[0.16em] uppercase font-light text-br-gold hover:text-br-cream transition-colors duration-200"
-        onclick="setLang('en')">EN</button>
+        onclick="setLang('en')"><img src="./assets/img/eng.png" class="w-6" alt=""></button>
     </div>
 
     <!-- Socials -->
@@ -238,24 +259,23 @@
   </div>
 
   <!-- HERO -->
-  <section class="relative h-screen min-h-[800px] flex items-end overflow-hidden">
+  <section class="relative h-screen min-h-[700px] flex items-center xl:items-start overflow-hidden">
     <div class="absolute inset-0 bg-neutral-900" id="heroBg"
       style="background: linear-gradient(to bottom, rgba(32,6,9,0.15) 0%, rgba(32,6,9,0.0) 18%, rgba(32,6,9,0.62) 65%, #200609 100%), url('https://lh3.googleusercontent.com/p/AF1QipN3tHDW-UY_Zxj5dIt87I0CvJ879xwFkCxv3Iwm=s1360-w1360-h1020') center/cover no-repeat;">
     </div>
-  <!-- NEW OVERLAY -->
-  <div class="absolute inset-0 bg-black/50 z-[1]"></div>
+    <!-- NEW OVERLAY -->
+    <div class="absolute inset-0 bg-black/50 z-[1]"></div>
 
     <div
-      class="relative xl:top-10 -top-20 z-[2] px-[56px] pb-[96px] max-[980px]:px-5 max-[980px]:pb-16 animate-[up_1.4s_cubic-bezier(0.16,1,0.3,1)_both]">
+      class="relative xl:top-48 z-[2] px-[56px] pb-[96px] max-[980px]:px-5 max-[980px]:pb-16 animate-[up_1.4s_cubic-bezier(0.16,1,0.3,1)_both]">
       <p
         class="text-[0.68rem] tracking-[0.3em] uppercase text-br-gold mb-[22px] flex items-center gap-[14px] before:content-[''] before:w-[28px] before:h-[1px] before:bg-br-gold before:flex-shrink-0">
-        Genève · Boulevard Georges-Favon 14</p>
+        · Boulevard Georges-Favon 14</p>
 
       <div data-lang="fr">
-        <!-- <h2 class="text-[clamp(3.2rem,8vw,7rem)] font-cormorant font-light text-br-cream mb-[26px] max-w-[820px] max-[600px]:text-[clamp(2.6rem,11vw,3.2rem)]">Bâton-Rouge</h2> -->
         <h1
           class="font-cormorant font-light text-[clamp(3.2rem,8vw,7rem)] leading-[1.02] text-br-cream mb-[26px] max-w-[820px] max-[600px]:text-[clamp(2.6rem,11vw,3.2rem)]">
-          Bâton-Rouge <br> L'endroit où<br><em class="italic text-br-gold-lt">chaque soirée</em><br>devient unique.</h1>
+          Bâton-Rouge</h1>
         <p class="text-[0.97rem] font-light text-br-dim leading-[1.8] max-w-[400px] mb-[44px]">Un verre pour commencer.
           Une soirée pour se souvenir.</p>
       </div>
@@ -279,6 +299,25 @@
           <span data-lang="en">See the menu</span>
         </a>
       </div>
+
+      <!-- line dot moving  -->
+     <div class="flex justify-center pt-10">
+  <div class="relative w-full max-w-[600px] h-[120px]">
+
+    <!-- Horizontal line (Perfect center) -->
+    <div class="absolute top-6 left-1/2 -translate-x-1/2">
+      <img src="./assets/img/horizl.png" alt="horizontal line" class="h-12">
+    </div>
+
+    <!-- White dot (Perfectly aligned with line center) -->
+    <div class="absolute top-16 left-1/2 -translate-x-1/2 animate-dotFloat">
+      <img src="./assets/img/whitedot.png" alt="white dot">
+    </div>
+
+  </div>
+</div>
+
+
     </div>
   </section>
 
@@ -370,8 +409,7 @@
   <section class="grid grid-cols-2 min-h-[520px] max-[980px]:grid-cols-1 overflow-hidden relative">
     <div
       class="relative overflow-hidden max-[980px]:h-[300px] rv opacity-0 translate-y-[28px] transition-all duration-[900ms] ease-in-out">
-      <img src="https://images.unsplash.com/photo-1534353436294-0dbd4bdac845?w=1000&q=85&auto=format&fit=crop"
-        alt="Ambiance bar dansant" loading="lazy"
+      <img src="./assets/img/img7.jpg" alt="Ambiance bar dansant" loading="lazy"
         class="w-full h-full object-cover brightness-[0.75] saturate-[0.85] transition-all duration-[900ms] hover:scale-[1.04] hover:brightness-[0.9] hover:saturate-100" />
       <div
         class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-br-bg max-[980px]:bg-gradient-to-b">
@@ -407,8 +445,7 @@
     <div class="grid grid-cols-2 min-h-[500px] max-[980px]:grid-cols-1">
       <div
         class="relative overflow-hidden max-[980px]:h-[280px] rv opacity-0 translate-y-[28px] transition-all duration-[900ms] ease-in-out">
-        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1000&q=85&auto=format&fit=crop"
-          alt="DJ set ambiance" loading="lazy"
+        <img src="./assets/img/img6.jpg" alt="DJ set ambiance" loading="lazy"
           class="w-full h-full object-cover block brightness-[0.75] saturate-[0.85] transition-all duration-[900ms] hover:scale-[1.04] hover:brightness-[0.9] hover:saturate-100"
           onerror="this.src='https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1000&q=85&auto=format&fit=crop'" />
         <div
@@ -445,8 +482,8 @@
           </div>
           <a href="https://www.instagram.com/batonrouge.geneve?igsh=dHRsdm5heGE3aXhu" target="_blank"
             class="inline-block py-[13px] px-[34px] border border-white/30 text-br-cream uppercase text-[0.74rem] tracking-[0.18em] font-normal transition-all hover:border-br-cream hover:-translate-y-[2px] mt-7">
-            <span data-lang="fr">Suivre sur Instagram</span>
-            <span data-lang="en">Follow on Instagram</span>
+            <span data-lang="fr">Voir la programmation</span>
+            <span data-lang="en">See the program</span>
           </a>
         </div>
       </div>
@@ -456,17 +493,7 @@
   <!-- FOOTER -->
   <footer class="bg-br-bg-deep border-t border-br-gold/10 py-[60px] px-14 max-[980px]:px-5 max-[980px]:py-11">
     <div class="max-w-[1300px] mx-auto flex flex-col items-center text-center">
-      <img src="./assets/img/BR-removebg-preview.png" class="w-32" alt="">
-      <!-- Logo -->
-      <!-- <svg viewBox="0 0 130 145" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto mb-8 opacity-80">
-        <rect x="30" y="30" width="66" height="66" stroke="#BF8A30" stroke-width="2" fill="none" />
-        <line x1="30" y1="78" x2="78" y2="78" stroke="#BF8A30" stroke-width="2" />
-        <line x1="68" y1="6" x2="96" y2="52" stroke="#BF8A30" stroke-width="2" />
-        <text x="63" y="116" text-anchor="middle" font-family="'Outfit',sans-serif" font-weight="300" font-size="12.5"
-          letter-spacing="4.5" fill="#EFE9DF">BÂTON</text>
-        <text x="63" y="133" text-anchor="middle" font-family="'Outfit',sans-serif" font-weight="300" font-size="12.5"
-          letter-spacing="4.5" fill="#EFE9DF">ROUGE</text>
-      </svg> -->
+      <img src="./assets/img/baton rouge.png" class="w-32" alt="">
 
       <!-- Lang switch -->
       <div class="flex space-x-4 mb-8 pt-8">
@@ -493,16 +520,16 @@
           class="w-8 h-8 flex items-center justify-center bg-white rounded-full hover:scale-110 transition duration-200">
           <i class="fab fa-instagram text-black text-sm"></i>
         </a>
-        <a href="#"
+        <!-- <a href="#"
           class="w-8 h-8 flex items-center justify-center bg-white rounded-full hover:scale-110 transition duration-200">
           <i class="fab fa-facebook-f text-black text-sm"></i>
-        </a>
+        </a> -->
       </div>
 
       <hr class="w-full border-white/5 mb-8 border-br-gold/8">
 
       <p class="text-[0.65rem] uppercase tracking-widest text-br-cream/20 font-light">
-        &copy; 2024 Bâton-Rouge Genève. <span data-lang="fr">Tous droits réservés.</span><span data-lang="en">All rights
+        &copy; 2026 Bâton-Rouge Genève. <span data-lang="fr">Tous droits réservés.</span><span data-lang="en">All rights
           reserved.</span>
       </p>
     </div>
@@ -655,4 +682,5 @@
   </script>
 
 </body>
+
 </html>
