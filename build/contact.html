@@ -157,7 +157,8 @@
 
   <!-- INFOS -->
   <section class="py-[160px] px-14 max-[980px]:px-5 max-[980px]:py-[120px] pb-[100px] max-[980px]:pb-20" id="infos">
-    <div class="grid grid-cols-2 gap-20 items-start max-w-[1120px] mx-auto max-[980px]:grid-cols-1 max-[980px]:gap-16 pt-10 md:pt-0">
+    <div
+      class="grid grid-cols-2 gap-20 items-start max-w-[1120px] mx-auto max-[980px]:grid-cols-1 max-[980px]:gap-16 pt-10 md:pt-0">
       <div class="rv opacity-0 translate-y-[28px] transition-all duration-[900ms] ease-in-out">
         <div data-lang="fr">
           <h2 class="font-cormorant font-light text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.13] text-br-cream mb-8">On
@@ -292,22 +293,22 @@
               <div class="flex flex-wrap gap-2 mt-3">
                 <button type="button"
                   class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="18:30">18:30</button>
+                  data-time="16:00">16:00</button>
                 <button type="button"
                   class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="19:00">19:00</button>
-                <button type="button"
-                  class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="19:30">19:30</button>
+                  data-time="18:00">18:00</button>
                 <button type="button"
                   class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
                   data-time="20:00">20:00</button>
                 <button type="button"
                   class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="20:30">20:30</button>
+                  data-time="22:00">22:00</button>
                 <button type="button"
                   class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="21:00">21:00</button>
+                  data-time="00:00">00:00</button>
+                <button type="button"
+                  class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
+                  data-time="02:00">02:00</button>
               </div>
             </div>
           </div>
@@ -591,17 +592,17 @@
 
       // Convert to minutes for easier comparison
       const selMin = selH * 60 + selM;
-      const openMin = openH * 60 + openM;
-      const closeMin = closeH * 60 + closeM;
 
-      // Logic for hours spanning midnight (e.g., 16:00 to 02:00)
-      // Valid if time is >= 16:00 OR (time < closing time)
-      // Note: We assume the reservation is for the same night (starting 16:00)
-      const isValid = selMin >= openMin || selMin < closeMin;
+      // 4 PM (16:00) = 16 * 60 = 960 mins
+      // 4 AM (04:00) next day = (24 + 4) * 60 = 1680 mins (relative to start of day)
+      // OR if we compare within a single 24h cycle:
+      // Valid if (selH >= 16) OR (selH < 4)
+
+      const isValid = (selH >= 16) || (selH < 4);
 
       if (!isValid) {
-        const msgFr = `Hors horaires: ${hours.open} - ${hours.close}`;
-        const msgEn = `Outside hours: ${hours.open} - ${hours.close}`;
+        const msgFr = "Veuillez choisir une heure entre 16h00 et 04h00.";
+        const msgEn = "Please choose a time between 4:00 PM and 4:00 AM.";
         timeError.textContent = document.body.classList.contains('en') ? msgEn : msgFr;
         timeError.classList.remove('hidden');
         arrivalTime.setCustomValidity("Invalid Time");
@@ -635,4 +636,5 @@
   </script>
 
 </body>
+
 </html>
