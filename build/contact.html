@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/preloader.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -291,27 +292,6 @@ every detail alongside you.</p>
                 class="w-full bg-br-bg border border-br-dim2 p-[14px_18px] text-br-cream font-outfit text-[0.9rem] transition-colors focus:outline-none focus:border-br-gold appearance-none">
               <div id="time-error" class="text-[0.65rem] text-br-rouge mt-1 hidden italic"></div>
 
-              <!-- Quick Select Buttons -->
-              <!-- <div class="flex flex-wrap gap-2 mt-3">
-                <button type="button"
-                  class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="16:00">16:00</button>
-                <button type="button"
-                  class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="18:00">18:00</button>
-                <button type="button"
-                  class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="20:00">20:00</button>
-                <button type="button"
-                  class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="22:00">22:00</button>
-                <button type="button"
-                  class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="00:00">00:00</button>
-                <button type="button"
-                  class="quick-time-btn px-3 py-1.5 border border-br-dim2 rounded-full text-[0.7rem] text-br-dim hover:border-br-gold hover:text-br-gold transition-all"
-                  data-time="02:00">02:00</button>
-              </div> -->
             </div>
           </div>
         </div>
@@ -635,6 +615,8 @@ every detail alongside you.</p>
     }, { threshold: 0.08 });
     document.querySelectorAll(".rv, .rvl, .rvr").forEach(el => io.observe(el));
   </script>
+  <!-- PRELOADER -->
+  <script src="./assets/js/preloader.js"></script>
 
 </body>
 </html>

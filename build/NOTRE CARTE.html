@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/preloader.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -153,10 +154,6 @@
         vous <em class="italic text-br-rouge">propose</em></h2>
       <h2 class="font-cormorant font-light text-[clamp(2.5rem,5vw,4rem)] text-[#2B1C12] mb-6" data-lang="en">What we <em
           class="italic text-br-rouge">offer</em></h2>
-      <!-- <p class="text-[1rem] text-[#2B1C12]/60 font-light" data-lang="fr">Cocktails maison, Rollini, petits plats à
-        partager.</p>
-      <p class="text-[1rem] text-[#2B1C12]/60 font-light" data-lang="en">House cocktails, Rollini, small plates to
-        share.</p> -->
     </div>
     <div class="grid grid-cols-3 gap-[2px] max-w-[1120px] mx-auto mb-[52px] max-[980px]:grid-cols-1 overflow-hidden">
       <div class="bg-white py-10 px-8 rv opacity-0 translate-y-[28px] transition-all duration-[900ms] ease-in-out">
@@ -980,6 +977,8 @@ Spicy +1.–</div> -->
     }, { threshold: 0.08 });
     document.querySelectorAll(".rv, .rvl, .rvr").forEach(el => io.observe(el));
   </script>
+  <!-- PRELOADER -->
+  <script src="./assets/js/preloader.js"></script>
 
 </body>
 </html>

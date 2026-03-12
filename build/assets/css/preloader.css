@@ -1,0 +1,62 @@
+/* Premium Preloader Styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #200609; /* br-bg */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity 0.8s ease-in-out, visibility 0.8s;
+}
+
+#preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader-logo {
+    width: 120px;
+    margin-bottom: 30px;
+    animation: logoPulse 2s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(191, 138, 48, 0.2));
+}
+
+.preloader-spinner {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(191, 138, 48, 0.1);
+    border-top: 2px solid #BF8A30; /* br-gold */
+    border-radius: 50%;
+    animation: premiumRotate 1s linear infinite;
+}
+
+@keyframes logoPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+@keyframes premiumRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hide content until preloader is done if needed, 
+   but usually we just show preloader on top */
+body.preloader-active {
+    overflow: hidden;
+}
