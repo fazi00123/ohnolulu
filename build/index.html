@@ -44,9 +44,9 @@
 
   <!-- FAVICON -->
   <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='18' y='18' width='50' height='50' stroke='%23BF8A30' stroke-width='4' fill='none'/><line x1='18' y1='52' x2='52' y2='52' stroke='%23BF8A30' stroke-width='4'/><line x1='48' y1='4' x2='72' y2='42' stroke='%23BF8A30' stroke-width='4'/></svg>">
-  <link rel="apple-touch-icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23200609' width='100' height='100'/><rect x='18' y='18' width='50' height='50' stroke='%23BF8A30' stroke-width='4' fill='none'/><line x1='18' y1='52' x2='52' y2='52' stroke='%23BF8A30' stroke-width='4'/><line x1='48' y1='4' x2='72' y2='42' stroke='%23BF8A30' stroke-width='4'/></svg>">
+    href="./assets/img/baton rouge.png">
+  <!-- <link rel="apple-touch-icon"
+    href="./assets/img/baton rouge.png"> -->
 
   <!-- SCHEMA.ORG JSON-LD — LocalBusiness / BarOrPub -->
   <script type="application/ld+json">
@@ -227,8 +227,8 @@
           class="md:text-3xl text-lg font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
             data-lang="fr">La carte</span><span data-lang="en">Menu</span></a></li>
       <li><a href="./contact.html"
-          class="md:text-3xl text-lg font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200">CONTACT
-          / RESERVATIONS</a></li>
+          class="md:text-3xl text-lg font-light font-cormorant uppercase tracking-widest text-br-cream hover:text-br-gold transition-colors duration-200"><span
+            data-lang="fr">Contact / Réservations</span><span data-lang="en">CONTACT / RESERVATIONS</span></a></li>
     </ul>
 
     <!-- <a href="./contact.html#reservation"
@@ -259,25 +259,28 @@
   </div>
 
   <!-- HERO -->
-  <section class="relative h-screen min-h-[800px] flex items-center xl:items-start overflow-hidden">
+  <section class="relative h-screen min-h-[900px] flex items-center xl:items-start overflow-hidden">
     <div class="absolute inset-0 bg-neutral-900" id="heroBg"
       style="background: linear-gradient(to bottom, rgba(32,6,9,0.15) 0%, rgba(32,6,9,0.0) 18%, rgba(32,6,9,0.62) 65%, #200609 100%), url('./assets/img/heroimg.jpg') center/cover no-repeat;">
     </div>
     <!-- NEW OVERLAY -->
     <div class="absolute inset-0 bg-black/50 z-[1]"></div>
 
-    <div class="relative top-28 z-[2] px-[56px] pb-[96px] max-[980px]:px-5 max-[980px]:pb-16 animate-[up_1.4s_cubic-bezier(0.16,1,0.3,1)_both]">
+    <div class="relative w-full top-28 z-[2] px-[56px] pb-[96px] max-[980px]:px-5 max-[980px]:pb-16 animate-[up_1.4s_cubic-bezier(0.16,1,0.3,1)_both]">
       <p class="text-[0.68rem] tracking-[0.3em] uppercase text-br-gold mb-[22px] flex items-center gap-[14px] before:content-[''] before:w-[28px] before:h-[1px] before:bg-br-gold before:flex-shrink-0"> Boulevard Georges-Favon 14</p>
 
       <div data-lang="fr">
         <h1 class="font-cormorant font-light text-[clamp(3.2rem,8vw,7rem)] leading-[1.02] text-br-cream mb-[26px] max-w-[1820px] max-[600px]:text-[clamp(2.6rem,11vw,3.2rem)]">
-         Un verre pour <br> <em class="italic text-br-gold-lt">commencer</em>. <br>Une soirée pour se  souvenir.</h1>
-
+         Un verre pour <br> <em class="italic text-br-gold-lt">commencer</em>. <br>Une soirée pour se souvenir.</h1>
+          <p class="text-[0.97rem] font-light text-br-dim leading-[1.8] max-w-[400px] ">L'endroit où votre soirée prend forme.</p>
+                  <p class="text-[0.97rem] font-light text-br-dim leading-[1.8] max-w-[400px] mb-[44px]">Vous venez pour un verre. Vous restez pour la
+nuit.</p>
       </div>
       <div data-lang="en" aria-hidden="true">
         <h1
-          class="font-cormorant font-light text-[clamp(3.2rem,8vw,7rem)] leading-[1.02] text-br-cream mb-[26px] max-w-[820px] max-[600px]:text-[clamp(2.6rem,11vw,3.2rem)]">
-          The place where<br><em class="italic text-br-gold-lt">your night</em><br>takes shape.</h1>
+          class="font-cormorant font-light text-[clamp(3.2rem,8vw,7rem)] leading-[1.02] text-br-cream mb-[26px] max-[600px]:text-[clamp(2.6rem,11vw,3.2rem)]">
+          One drink to <br><em class="italic text-br-gold-lt">start</em><br>One night to remember.</h1>
+          <p class="text-[0.97rem] font-light text-br-dim leading-[1.8] max-w-[400px]">The place where your night takes shape.</p>
         <p class="text-[0.97rem] font-light text-br-dim leading-[1.8] max-w-[400px] mb-[44px]">You come for a drink. You
           stay for the night.</p>
       </div>
@@ -285,21 +288,21 @@
       <div class="flex gap-3 flex-wrap max-[600px]:flex-col">
         <a href="./contact.html#reservation"
           class="inline-block py-[13px] px-[34px] bg-br-rouge text-br-cream uppercase text-[0.74rem] tracking-[0.18em] font-normal transition-all hover:bg-br-rouge-dk hover:-translate-y-[2px] text-center max-[600px]:w-full">
-          <span data-lang="fr">RéSERVER UNE TABLE</span>
+          <span data-lang="fr">RÉSERVER UNE TABLE</span>
           <span data-lang="en">Book a table</span>
         </a>
         <a href="./NOTRE CARTE.html"
           class="inline-block py-[13px] px-[34px] border border-white/20 text-br-cream uppercase text-[0.74rem] tracking-[0.18em] font-normal transition-all hover:border-br-cream hover:-translate-y-[2px] text-center max-[600px]:w-full">
           <span data-lang="fr">VOIR LA CARTE</span>
-          <span data-lang="en">See the menu</span>
+          <span data-lang="en">BOOK A TABLE</span>
         </a>
       </div>
 
-              <p class="text-sm text-br-gold-lt text-center font-light leading-[1.8] pt-16">DÉFILER VERS LE BAS</p>
+       <p class="text-sm text-br-gold-lt text-center font-light leading-[1.8] pt-16"> <span data-lang="fr">DÉFILER VERS LE BAS</span><span data-lang="en">SCROLL DOWN</span></p>
 
       <!-- line dot moving  -->
      <div class="flex justify-center">
-  <div class="relative w-full max-w-[600px] h-[120px]">
+  <div class="relative w-full h-[120px]">
 
     <!-- Horizontal line (Perfect center) -->
     <div class="absolute top-6 left-1/2 -translate-x-1/2">
@@ -375,28 +378,33 @@
       <div class="rv opacity-0 translate-x-[28px] transition-all duration-[900ms] ease-in-out">
         <div data-lang="fr">
           <h2 class="font-cormorant font-light text-[clamp(2rem,3.4vw,3rem)] leading-[1.18] text-br-cream mb-7">
-            Cocktails signatures.<br>Rollini à partager.<br>Une soirée qui évolue <em
-              class="italic text-br-gold-lt">naturellement.</em></h2>
+            Cocktails signatures.<br> Rollini à partager<br> Une soirée qui évolue <em class="italic text-br-gold-lt">naturellement.</em></h2>
           <p class="text-[0.95rem] font-light text-br-dim leading-[1.92] mb-4">Bâton-Rouge change de visage au fil de la
-            soirée. Un premier verre. Quelques
-            bouchées à partager. Les échanges se prolongent. La musique s’élève.</p>
-          <p class="text-[0.95rem] font-light text-br-dim leading-[1.92] mb-4">Au sous-sol, le bar dansant s'éveille.
-            Ceux qui restent le savent : les meilleures
-            soirées sont souvent celles qu'on n'avait pas prévues.</p>
+soirée. Un premier verre. Quelques bouchées à
+partager. Les échanges se prolongent. La
+musique s'élève.
+</p>
+          <p class="text-[0.95rem] font-light text-br-dim leading-[1.92] mb-4">Au sous-sol, le bar dansant s'éveille. Ceux qui
+restent le savent : les meilleures soirées sont
+souvent celles qu'on n'avait pas prévues.</p>
         </div>
         <div data-lang="en">
           <h2 class="font-cormorant font-light text-[clamp(2rem,3.4vw,3rem)] leading-[1.18] text-br-cream mb-7">
-            Cocktails.<br>Rollini to share.<br>A night that <em class="italic text-br-gold-lt">evolves.</em></h2>
-          <p class="text-[0.95rem] font-light text-br-dim leading-[1.92] mb-4">Bâton-Rouge changes character as the
-            night goes on. It starts with a house cocktail and some Rollini. The conversation settles in. The music
-            rises.</p>
-          <p class="text-[0.95rem] font-light text-br-dim leading-[1.92] mb-4">Downstairs, the dance bar comes alive.
-            Those who stay know it: the best nights are often the ones you didn't plan.</p>
+            Signature cocktails.<br>Rollini to share.<br>A night
+that unfolds on its <em class="italic text-br-gold-lt">own.</em></h2>
+          <p class="text-[0.95rem] font-light text-br-dim leading-[1.92] mb-4">Bâton-Rouge shifts as the night goes on. It
+starts with a cocktail, a few bites to share.
+The conversation takes over. The music picks
+up.
+</p>
+          <p class="text-[0.95rem] font-light text-br-dim leading-[1.92] mb-4">Downstairs, the dance floor wakes up. Those
+who stay know it — the best nights are rarely
+the ones you planned.</p>
         </div>
         <a href="./contact.html#reservation"
           class="inline-block py-[13px] px-[34px] bg-br-rouge text-br-cream uppercase text-[0.74rem] tracking-[0.18em] font-normal transition-all hover:bg-br-rouge-dk hover:-translate-y-[2px] mt-6">
           <span data-lang="fr">Réserver une table</span>
-          <span data-lang="en">Book a table</span>
+          <span data-lang="en">Book a Table</span>
         </a>
       </div>
     </div>
@@ -418,20 +426,22 @@
         <div data-lang="fr">
           <div
             class="text-[0.66rem] tracking-[0.26em] uppercase text-br-gold mb-7 flex items-center gap-3 after:content-[''] after:flex-1 after:h-[1px] after:bg-br-gold/20">
-            L'art de la nuit</div>
-          <h2 class="font-cormorant font-light text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.13] text-br-cream mb-6">Une
-            atmosphère <em class="italic text-br-gold-lt">unique.</em></h2>
-          <p class="text-[0.95rem] font-light text-br-dim leading-[1.9] mb-9">Des lumières tamisées, des textures brutes
-            et une sélection musicale soignée. Tout est pensé pour que vous vous sentiez ailleurs.</p>
+            L'art de la nuit </div>
+          <h2 class="font-cormorant font-light text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.13] text-br-cream mb-6">Une atmosphère <em class="italic text-br-gold-lt">unique.</em></h2>
+          <p class="text-[0.95rem] font-light text-br-dim leading-[1.9] mb-9">Des lumières tamisées, des textures brutes et
+une sélection musicale soignée. Tout est pensé
+pour que vous vous sentiez ailleurs.</p>
         </div>
         <div data-lang="en">
           <div
             class="text-[0.66rem] tracking-[0.26em] uppercase text-br-gold mb-7 flex items-center gap-3 after:content-[''] after:flex-1 after:h-[1px] after:bg-br-gold/20">
-            The art of the night</div>
+            The Art of the Night</div>
           <h2 class="font-cormorant font-light text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.13] text-br-cream mb-6">A <em
-              class="italic text-br-gold-lt">unique</em> atmosphere.</h2>
-          <p class="text-[0.95rem] font-light text-br-dim leading-[1.9] mb-9">Dimmed lights, raw textures and a
-            carefully selected musical choice. Everything is designed to make you feel elsewhere.</p>
+              class="italic text-br-gold-lt">An atmosphere all its </em> own.</h2>
+          <p class="text-[0.95rem] font-light text-br-dim leading-[1.9] mb-9">Low lighting, raw textures, a curated
+soundtrack. Everything is designed to take
+you somewhere else.
+</p>
         </div>
       </div>
     </div>
@@ -458,29 +468,33 @@
               La programmation</div>
             <h2 class="font-cormorant font-light text-[clamp(2.2rem,4vw,3.4rem)] leading-[1.13] text-br-cream mb-6">
               Reggaeton. Afro.<em class="italic text-br-gold-lt"> Hip-hop.</em></h2>
-            <p class="text-[0.97rem] font-light text-br-dim leading-[1.9] mb-3.5">Une sélection musicale pointue portée
-              par des DJ parmi les plus en vue à
-              Genève, toujours connectés aux dernières tendances urbaines.
-              Stand-up, comédie live, événements exclusifs viennent enrichir la
-              programmation.</p>
-            <p class="text-[0.97rem] font-light text-br-dim leading-[1.9] mb-3.5">Chaque semaine révèle une nouvelle
-              énergie.<br>Chaque soirée affirme sa signature.</p>
+            <p class="text-[0.97rem] font-light text-br-dim leading-[1.9] mb-3.5">Une sélection musicale pointue portée par des
+DJ parmi les plus en vue à Genève, toujours
+connectés aux dernières tendances urbaines.
+Stand-up, comédie live, événements exclusifs
+viennent enrichir la programmation..</p>
+            <p class="text-[0.97rem] font-light text-br-dim leading-[1.9] mb-3.5">Chaque semaine révèle une nouvelle énergie. <br>
+Chaque soirée affirme sa signature.</p>
           </div>
           <div data-lang="en">
             <div
               class="text-[0.66rem] tracking-[0.26em] uppercase text-br-gold mb-7 flex items-center gap-3 after:content-[''] after:flex-1 after:h-[1px] after:bg-br-gold/20">
-              What's on</div>
+              Lineup</div>
             <h2 class="font-cormorant font-light text-[clamp(2.2rem,4vw,3.4rem)] leading-[1.13] text-br-cream mb-6">
-              Nights that <em class="italic text-br-gold-lt">change.</em></h2>
-            <p class="text-[0.97rem] font-light text-br-dim leading-[1.9] mb-3.5">DJ sets. Themed evenings. Stand-up
-              &amp; comedy. Special events.</p>
-            <p class="text-[0.97rem] font-light text-br-dim leading-[1.9] mb-3.5">Every week brings a different
-              atmosphere.<br>Every night has its own colour.</p>
+              Reggaeton. Afro. <em class="italic text-br-gold-lt"> Hip-hop.</em></h2>
+            <p class="text-[0.97rem] font-light text-br-dim leading-[1.9] mb-3.5">A sharp music selection brought by some of
+Geneva's most sought-after DJs, always
+dialled into the latest in urban culture.
+Stand-up, live comedy, and exclusive events
+round out the programme.
+</p>
+            <p class="text-[0.97rem] font-light text-br-dim leading-[1.9] mb-3.5">Every week, a new energy.
+<br>Every night, its own identity.</p>
           </div>
           <a href="https://www.instagram.com/batonrouge.geneve?igsh=dHRsdm5heGE3aXhu" target="_blank"
             class="inline-block py-[13px] px-[34px] border border-white/30 text-br-cream uppercase text-[0.74rem] tracking-[0.18em] font-normal transition-all hover:border-br-cream hover:-translate-y-[2px] mt-7">
             <span data-lang="fr">Voir la programmation</span>
-            <span data-lang="en">See the program</span>
+            <span data-lang="en">See the Lineup</span>
           </a>
         </div>
       </div>
@@ -517,7 +531,7 @@ data-instgrm-version="14">
               data-lang="en">Home</span></a></li>
         <li><a href="./NOTRE CARTE.html" class="hover:text-br-cream transition"><span data-lang="fr">La
               carte</span><span data-lang="en">Menu</span></a></li>
-        <li><a href="./contact.html" class="hover:text-br-cream transition">Contact / Reservations</a></li>
+        <li><a href="./contact.html" class="hover:text-br-cream transition"><span data-lang="fr">Contact / Réservations</span><span data-lang="en">Contact / Reservations</span></a></li>
       </ul>
 
       <!-- Social Icons -->
@@ -534,9 +548,10 @@ data-instgrm-version="14">
 
       <hr class="w-full border-white/5 mb-8 border-br-gold/8">
 
-      <p class="text-[0.65rem] uppercase tracking-widest text-br-cream/20 font-light">
-        &copy; 2026 Bâton-Rouge Genève. <span data-lang="fr">Tous droits réservés.</span><span data-lang="en">All rights
-          reserved.</span>
+      <p class="text-[0.65rem] uppercase tracking-widest text-br-cream/20 mb-4 font-light">
+        &copy; 2026 Bâton-Rouge Genève. <span data-lang="fr">Tous droits
+réservés.</span><span data-lang="en">All rights
+reserved.</span>
       </p>
     </div>
   </footer>
@@ -556,7 +571,7 @@ data-instgrm-version="14">
       onclick="togglePanel('reservation')">
       <i class="far fa-calendar-alt text-lg"></i>
       <span class="text-[10px] uppercase tracking-widest hidden md:block"><span data-lang="fr">Réserver</span><span
-          data-lang="en">Book</span></span>
+          data-lang="en">Reserve</span></span>
     </div>
     <div
       class="flex-1 border-r border-white/10 py-3 flex items-center justify-center gap-3 cursor-pointer hover:bg-br-bg-lift"
@@ -655,7 +670,7 @@ data-instgrm-version="14">
         pTitle.innerHTML = '<span data-lang="fr">Réservations</span><span data-lang="en">Reservations</span>';
         pContent.innerHTML = `
         <div class="flex flex-col md:flex-row justify-center gap-10 md:gap-24 uppercase tracking-[2px] text-xs">
-          <a href="./contact.html" class="flex flex-row items-center justify-center gap-2 hover:text-br-gold transition duration-200"><i class="far fa-envelope block text-2xl"></i>Formulaire</a>
+          <a href="./contact.html" class="flex flex-row items-center justify-center gap-2 hover:text-br-gold transition duration-200"><i class="far fa-envelope block text-2xl"></i>En ligne</a>
           <a href="https://wa.link/el0ytq" target="_blank" class="flex flex-row items-center justify-center gap-2 hover:text-br-gold transition duration-200"><i class="fab fa-whatsapp block text-2xl"></i>WhatsApp</a>
         </div>
       `;
@@ -663,7 +678,7 @@ data-instgrm-version="14">
         pTitle.innerHTML = 'Contact';
         pContent.innerHTML = `
         <div class="flex flex-col md:flex-row justify-center gap-10 md:gap-24 uppercase tracking-[2px] text-xs">
-          <div><p class="font-bold mb-2">Email</p><p class="opacity-60 text-none"><a href="mailto:info@batonrouge.swiss" class="hover:text-br-gold transition duration-200">info@batonrouge.swiss</a></p></div>
+          <div><p class="font-bold mb-2">E-mail</p><p class="opacity-60 text-none"><a href="mailto:info@batonrouge.swiss" class="hover:text-br-gold transition duration-200">info@batonrouge.swiss</a></p></div>
           <div><p class="font-bold mb-2">Phone</p><p class="opacity-60"> <a href="tel:+41782350196" class="hover:text-br-gold transition duration-200">+41 78 235 01 96</a></p></div>
         </div>
       `;
@@ -688,5 +703,4 @@ data-instgrm-version="14">
   </script>
 
 </body>
-
 </html>
