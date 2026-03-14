@@ -914,6 +914,7 @@ Spicy +1.–</div> -->
     function setLang(lang) {
       document.body.classList.toggle('en', lang === 'en');
       document.documentElement.lang = lang;
+      localStorage.setItem('br_lang_pref', lang);
 
       // Update active states for buttons (simple toggle)
       document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -921,6 +922,15 @@ Spicy +1.–</div> -->
         else btn.classList.remove('active');
       });
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      let savedLang = localStorage.getItem('br_lang_pref');
+      if (!savedLang) {
+        savedLang = 'fr';
+        localStorage.setItem('br_lang_pref', savedLang);
+      }
+      setLang(savedLang);
+    });
 
     // Footer Panel Logic
     const panel = document.getElementById('infoPanel');

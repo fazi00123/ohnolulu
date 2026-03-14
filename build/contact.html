@@ -214,9 +214,9 @@ every detail alongside you.</p>
           </div>
           <div class="text-[1rem] font-light text-br-dim leading-[1.82]">
             <strong class="text-br-cream font-normal"><span data-lang="fr">Mardi à Jeudi</span><span
-                data-lang="en">Tuesday to Thursday</span></strong>&ensp;16h – 02h<br>
+                data-lang="en">Tuesday to Thursday</span></strong>&ensp; 4:00 pm - 2:00 am<br>
             <strong class="text-br-cream font-normal"><span data-lang="fr">Vendredi et Samedi</span><span
-                data-lang="en">Friday and Saturday</span></strong>&ensp;16h – 04h
+                data-lang="en">Friday and Saturday</span></strong>&ensp;4:00 pm - 4:00 am
           </div>
         </div>
         <div>
@@ -265,18 +265,31 @@ every detail alongside you.</p>
       <form id="reservation-form">
         <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4 md:mb-6 mb-4">
           <div class="mb-6">
-            <label class="block text-[0.65rem] tracking-[0.2em] uppercase text-br-gold mb-2"><span data-lang="fr">Prénom / Nom </span><span data-lang="en">Full Name</span></label>
+            <label class="block text-[0.65rem] tracking-[0.2em] uppercase text-br-gold mb-2"><span data-lang="fr">Prénom</span><span data-lang="en">First Name</span></label>
             <input type="text"
               class="w-full bg-br-bg border border-br-dim2 p-[14px_18px] text-br-cream font-outfit text-[0.9rem] transition-colors focus:outline-none focus:border-br-gold placeholder:text-br-dim2"
-              placeholder="Prénom Nom">
+              data-lang="fr" placeholder="Prénom">
+            <input type="text"
+              class="w-full bg-br-bg border border-br-dim2 p-[14px_18px] text-br-cream font-outfit text-[0.9rem] transition-colors focus:outline-none focus:border-br-gold placeholder:text-br-dim2"
+              data-lang="en" placeholder="First Name">
           </div>
+          <div class="mb-6">
+             <label class="block text-[0.65rem] tracking-[0.2em] uppercase text-br-gold mb-2"><span data-lang="fr">Nom</span><span data-lang="en">Last Name</span></label>
+            <input type="text"
+              class="w-full bg-br-bg border border-br-dim2 p-[14px_18px] text-br-cream font-outfit text-[0.9rem] transition-colors focus:outline-none focus:border-br-gold placeholder:text-br-dim2"
+              data-lang="fr" placeholder="Nom">
+            <input type="text"
+              class="w-full bg-br-bg border border-br-dim2 p-[14px_18px] text-br-cream font-outfit text-[0.9rem] transition-colors focus:outline-none focus:border-br-gold placeholder:text-br-dim2"
+              data-lang="en" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4 md:mb-6 mb-4">
           <div class="mb-6">
             <label class="block text-[0.65rem] tracking-[0.2em] uppercase text-br-gold mb-2"><span data-lang="fr">E-mail</span><span data-lang="en">Email</span></label>
             <input type="email"
               class="w-full bg-br-bg border border-br-dim2 p-[14px_18px] text-br-cream font-outfit text-[0.9rem] transition-colors focus:outline-none focus:border-br-gold placeholder:text-br-dim2"
               placeholder="E-mail">
           </div>
-        </div>
         <div class="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4 md:mb-6 mb-4">
           <div class="mb-6">
             <label class="block text-[0.65rem] tracking-[0.2em] uppercase text-br-gold mb-2"><span data-lang="fr">Date
@@ -466,6 +479,7 @@ every detail alongside you.</p>
     function setLang(lang) {
       document.body.classList.toggle('en', lang === 'en');
       document.documentElement.lang = lang;
+      localStorage.setItem('br_lang_pref', lang);
 
       // Update active states for buttons (simple toggle)
       document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -473,6 +487,15 @@ every detail alongside you.</p>
         else btn.classList.remove('active');
       });
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      let savedLang = localStorage.getItem('br_lang_pref');
+      if (!savedLang) {
+        savedLang = 'fr';
+        localStorage.setItem('br_lang_pref', savedLang);
+      }
+      setLang(savedLang);
+    });
 
     // Footer Panel Logic
     const panel = document.getElementById('infoPanel');
